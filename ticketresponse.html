@@ -19,179 +19,76 @@
     
    <div class="" id="page-head">
  
-        <div class=" d-flex justify-content-center ">
+        <div class=" d-flex justify-content-center">
             
-            <div class="page-body "  id="form2">
+            <div class="page-body " id="form2">
                 <p class="page-title">Search/Response Ticket </p>
                 
                 <div class="p-2">
-                    <div class="note p-2 my-2">
-                        <p><b>Important Note:</b> All the levels of Authority for particular
-                            Ticket must have same configuration. i.e. if under level 1, Category= "HR"
-                            , Query Category= " ", Location= "Delhi", then level 2 must have Category= "HR",
-                            Query Category= " ", Location= "Delhi".
-                        </p>
-                    </div>
-                     <div class="row">
-
-                        <div class="form-group col-xl-2 col-sm-12">
-                            <label for="form-control">Category</label>
+                    <div class="page2-heading my-3 d-flex  align-items-center">
+                       <div class="">Search Query</div> 
+                       <div class="ml-auto">
+                        <div class="d-flex ">
+                       
                                 <select class="form-control">
-                                <option>--Select All--</option>
+                                <option selected>Search no. of records per page</option>
+                                <option value="">10</option>
+                                <option value="">20</option>
+                                <option value="">50</option>
                                 </select>
                         </div>
-                        <div class="form-group col-xl-2 col-sm-12">
-                            <label for="form-control">Query Category</label>
-                                <select class="form-control">
-                                <option>--Select All--</option>
-                                </select>
-                        </div>
-                        <div class="form-group col-xl-2 col-sm-12">
-                            <label for="form-control">Channel</label>
-                                <select class="form-control">
-                                <option>--Select All--</option>
-                                </select>
-                        </div>
-                        <div class="form-group col-xl-2 col-sm-12">
-                            <label for="form-control">Region</label>
-                                <select class="form-control">
-                                <option>--Select All--</option>
-                                </select>
-                        </div>
-
-                        
-                        <div class="form-group col-xl-4 col-sm-12">
-                            <div class="form-group ">
-                                <p class="">Authority Type</p>
-                                   <div class="d-flex my-2  flex-wrap row">
-                                     <div class="form-check col-xl-6 col-sm-12">
-                                         <input type="radio" class="form-check-input" id="exampleCheck1">
-                                         <label class="form-check-label" for="exampleCheck1">Employee</label>
-                                       </div>
-                                     <div class="form-check  col-xl-6 col-sm-12">
-                                         <input type="radio" class="form-check-input" id="exampleCheck1">
-                                         <label class="form-check-label" for="exampleCheck1">User</label>
-                                       </div>
-                                 </div>
-                          </div>
-
                        </div>
-                      
+                    </div>
 
-                
-
+                    <table class="table">
+                        <thead>
+                          <tr>
+                              <th>
+                                  <div class="form-check" id="check">
+                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    </div>
+                              </th>
+                              <th>Ticket Number</th>
+                              <th>Employee Name</th>
+                              <th>Authority ID</th>
+                              <th>Cost Center</th>
+                              <th>Category</th>
+                              <th>Query Category</th>
+                              <th>Location</th>
+                              <th>Date</th>
+                              <th>Status</th>
+                              <th>Read</th>
+                              <th>View</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td>#001</td>
+                              <td>Abc</td>
+                              <td>2AB43</td>
+                              <td>Abc</td>
+                              <td>--</td>
+                              <td>--</td>
+                              <td>--</td>
+                              <td>Delhi</td>
+                              <td>09/08/2021</td>
+                              <td>Active</td>
+                              <td>Yes</td>
+                              <td>1</td>
+                          </tr>
+                        </tbody>
+                     </table>
+                     <p class="record-found"><b>1 Record(s) found</b></p>
+                     <div class="d-flex  justify-content-end mt-3">
+                      <button class="btn-save">Show All</button>
+                      <button class="btn-discard">Export</button>
+                     </div> 
+      
                 </div>
-                <div class="row">
-                    <div class="form-group col-xl-2 col-sm-12">
-                           <label for="form-control">Zone</label>
-                               <select class="form-control">
-                               <option>--Select All--</option>
-                               </select>
-                       </div>
-                       <div class="form-group col-xl-2 col-sm-12">
-                           <label for="form-control">Location</label>
-                               <select class="form-control">
-                               <option>--Select All--</option>
-                               </select>
-                       </div>
-                       <div class="form-group col-xl-2 col-sm-12">
-                        <label for="form-control">Unit</label>
-                            <select class="form-control">
-                            <option>--Select All--</option>
-                            </select>
-                    </div>
-                    <div class="form-group col-xl-2 col-sm-12">
-                        <label for="form-control">User Name</label>
-                            <select class="form-control">
-                            <option>--Select User--</option>
-                            </select>
-                    </div>
-                    <div class="form-group col-xl-2 col-sm-12">
-                        <label for="form-control">Level 1</label>
-                            <select class="form-control">
-                            <option>Select Level</option>
-                            </select>
-                    </div>
-                    <div class="form-group col-xl-2 col-sm-12">
-                        <div class="form-check mt-4">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Active</label>
-                          </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-xl-2 col-sm-12 ">
-                        <label for="form-control">No. of days for solution</label>
-                        <input type="text" class="form-control" placeholder="Enter">
-                    </div>
-                    <div class="form-group col-xl-2 col-sm-12 ">
-                        <label for="form-control">Effective Date</label>
-                        <input type="date" class="form-control" placeholder="Enter">
-                    </div>
-                    <div class="form-group col-xl-2 col-sm-12">
-                       <div class="form-check mt-4">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Same Cost Center</label>
-                        </div>
-                    </div>
-                    <div class="form-group col-xl-2 col-sm-12">
-                        <div class="form-check mt-4">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Same Location</label>
-                        </div>
-                             
-                    </div>
-                 
-                   <div class="form-group col-xl-4 col-sm-12">
-                        <div class="form-group mt-4">
-                            <div class="d-flex my-2  justify-content-between flex-wrap">
-                                <div class="form-check ">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Same Unit</label>
-                                </div>
-                                <div class="form-check mx-4">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Same Department</label>
-                                </div>
-                            </div>
-                      </div>
-
-                   </div>
-                
-              </div>
-              <div class="row">
-                <div class="form-group col-xl-2 col-sm-12">
-                   <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Same Designation</label>
-                    </div>
-                </div> 
-                <div class="form-group col-xl-2 col-sm-12">     
-                  <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Same Level</label>
-                 </div>
-                </div>
-
-               <div class="form-group col-xl-4 col-sm-12">
-                 <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Same Grade</label>
-                 </div>
-                </div>
-
-           </div>
-
-              
-
-
-                <div class="d-flex  justify-content-end mt-2">
-                    <button class="btn-save">Save</button>
-                    <button class="btn-discard">Reset</button>
-                </div>
-            
+               
             </div>
         </div>
+
    </div>
 
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
