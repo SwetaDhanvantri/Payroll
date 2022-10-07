@@ -1,0 +1,59 @@
+/*e-LETTER ISSUE Bulk */
+body{
+    font-size: 14px;
+  }
+  a{
+    text-decoration: none !important;
+  }
+  #elet-issue{
+      width: 90%;
+      margin-top: 40px;
+      border-radius: 4px;
+      font-size: 14px;
+      margin-left: 5%;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    #head-notice{
+      padding: 10px 20px;
+    }
+    
+    #elet-issue .form-check-input{
+      margin: 4px;
+     
+    }
+    .crup-title p{
+    margin: 0 0 0px 0;
+    font-size: 18px;
+    padding: 4px 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    font-weight: 500;
+    color: #FFFFF4;
+    background-color: #00416a;
+  
+    
+    }
+    .row, .col{
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+    }
+  
+    .btn-template{
+      background-color: #00416a;
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 4px;
+    }
+    .form-group{
+      font-size: 16px;
+    }
+    .form-control{
+      font-size: 14px !important;
+    }
+    #view-info p{
+      color: #095c91;
+      font-weight: bold;
+    }
+
+    /* elet bulk end*/

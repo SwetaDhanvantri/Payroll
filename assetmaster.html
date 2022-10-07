@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Master</title>
+     <!--assets-->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/assetstype.css">
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+ 
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.css">
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+<body>
+    <div id="bankDet">     
+        <section id="bdupdate">
+        <input type="radio" id="banum" value="1" name="tractor" checked='checked' />    
+        <input type="radio" id="Exbano" value="2" name="tractor" />      
+        <input type="radio" id="bmast" value="3" name="tractor" />
+        <input type="radio" id="brmast" value="4" name="tractor" />
+        <input type="radio" id="eximbranch" value="4" name="tractor" />
+        <p class="title-asset">Asset Master</p>
+          <nav  class="">  
+            
+          <label for="banum" class='nv nav1' checked='checked'>Asset Entry</label>
+          <label for="Exbano" class='nv nav2'>Import Export</label>
+          <!-- <label for="bmast" class='nv nav3'>Bank Master</label>
+          <label for="brmast" class='nv nav4'>Branch Master</label>
+          <label for="eximbranch" class='nv nav5'>Export Import Branch</label> -->
+          </nav>
+          
+          <article class=' nv c1 nav1' id="form2">
+            <div class=" d-flex justify-content-center m">
+                <div class="container ">
+                    <div class="d-flex row flex-wrap ">
+                        <div class="form-group col-xl-2 col-sm-12">
+                            <label for="form-control">Asset Type</label>
+                                <select class="form-control">
+                                <option>--Select All--</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12">
+                            <label for="form-control">Asset Sub Category</label>
+                                <select class="form-control">
+                                <option>--Sub Category--</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">Asset Description</label>
+                            <input type="text" class="form-control" placeholder="Asset Description">
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">Asset Value</label>
+                            <input type="text" class="form-control" placeholder="Asset Value">
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">Invoice No.</label>
+                            <input type="text" class="form-control" placeholder="Invoice No.">
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">Vendor Name</label>
+                            <input type="text" class="form-control" placeholder="Vendor Name">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between row">
+                        <div class="form-group col-xl-2 col-sm-12 d-flex flex-column ">
+                           <p>Serial No. Genertation</p>
+                              <div class="d-flex flex-column">
+                                <div class="form-check ">
+                                    <input type="radio" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Auto Genertate</label>
+                                  </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Manual</label>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">No. of Asset</label>
+                            <input type="text" class="form-control" placeholder="No. of Asset">
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">RAM</label>
+                            <input type="text" class="form-control" placeholder="RAM">
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">Hard Disk</label>
+                            <input type="text" class="form-control" placeholder="Hard Disk">
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">Operating System</label>
+                            <input type="text" class="form-control" placeholder="Hard Disk">
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">M.S Office</label>
+                            <input type="text" class="form-control" placeholder="Hard Disk">
+                        </div>
+    
+                    </div>
+                    <div class="d-flex flex-wrap row">
+                      
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">SAP Code</label>
+                            <input type="text" class="form-control" placeholder="SAP Code">
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">Employee Code</label>
+                            <select class="form-control">
+                                <option>--Select--</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">Employee Name</label>
+                            <input type="text" class="form-control" placeholder="Employee Name">
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">Department</label>
+                            <input type="text" class="form-control" placeholder="Department">
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">Purchase Date</label>
+                            <input type="date" class="form-control" placeholder="Purchase Date">
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12 ">
+                            <label for="form-control">Sale/Depose Date</label>
+                            <input type="date" class="form-control" placeholder="SaleDate">
+                        </div>
+    
+                    </div>
+
+                    <div class="d-flex flex-wrap row">
+                        <div class="form-check col-xl-2 col-sm-12 pt-4">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                           Self genertated series
+                            </label>
+                          </div>
+                        <div class="form-group col-xl-2 col-sm-12">
+                            <label class="form-label" for="customFile">Asset Image File</label>
+                            <input type="file" class="form-control" id="customFile" />
+                        </div>
+                        <div class="form-group col-xl-4 col-sm-12">
+                            <label class="form-label" for="customFile">Other Asset Document</label>
+                            <input type="file" class="form-control" id="customFile" />
+                        </div>
+                        <div class="form-group col-xl-4 col-sm-12 ">
+                            <label for="form-control">Remarks</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                        </div>
+                        
+                       
+
+
+                          
+    
+                    </div>
+
+                    <div class="d-flex  justify-content-end mt-5">
+                        <button class="btn-save">Save</button>
+                        <button class="btn-record">Report</button>
+                        <button class="btn-discard">Reset</button>
+                    </div>
+
+                </div>
+            </div>
+          
+          </article>
+          
+          <article class='c2 nv nav2 ' id="form2">
+         
+            <!--header -->
+            <div class="main-div" id="main-div">
+             <div>
+                <div class="note p-2 my-2">
+                    <p><b>Note:</b> While importing the excel sheet please enter the asset type code as
+                        given in the sheet. Please use MM/DD/YYYY or DD-MM-YYY date format 
+                        in excel sheet i.e 15-Apr-2022, 04/08/2022. 
+                    </p>
+                </div>
+
+             </div>
+             <div class="row">
+                <div class="col">
+                    <div class="form-group ">
+                        <label for="form-control">Asset Type</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    
+                </div>
+                <div class="col">
+                    <div class="form-group ">
+                        <label for="form-control">Asset Brand</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    
+                </div>
+             </div>
+
+             <div class="row">
+                <div class="form-group col-xl-3 col-sm-12 ">
+                    <label for="form-control">Number of Asset</label>
+                    <input type="text" class="form-control" placeholder="Number of Asset">
+                </div>
+                <div class="form-group col-xl-3 col-sm-12 d-flex flex-column ">
+                       <p>Serial No. Genertation</p>
+                       <div class="d-flex flex-column">
+                         <div class="form-check ">
+                             <input type="radio" class="form-check-input" id="exampleCheck1">
+                             <label class="form-check-label" for="exampleCheck1">Self Genertate Series</label>
+                         </div>
+                         <div class="form-check">
+                             <input type="radio" class="form-check-input" id="exampleCheck1">
+                             <label class="form-check-label" for="exampleCheck1">Manual</label>
+                         </div>
+                       </div>
+                 </div>
+                 <div class="form-group col-xl-3 col-sm-12 ">
+                    <label for="form-control">Start Number</label>
+                    <input type="text" class="form-control" placeholder="Start Number">
+                </div>
+                <div class="form-group col-xl-3 col-sm-12">
+                    <label class="form-label" for="customFile">Select excel file to import</label>
+                    <input type="file" class="form-control" id="customFile" />
+                </div>
+             </div>
+             <div class="d-flex  justify-content-end ">
+                <button class="btn-save">Import</button>
+                <button class="btn-discard">Reset</button>
+            </div>
+            </div>
+            <!--header end-->
+           
+          </article>
+          
+          <!-- <article class='c3 nv nav3' id="form2">
+           
+          </article>
+           
+          <article class='c4 nv nav4 ' id="form2">
+          </article>
+
+          <article class='c5 nv nav5 ' id="form2">
+          </article>  -->
+        </section>
+    </div>
+  
+
+         <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+     
+        <script src="./assets/fontawesome-free-6.2.0-web/js/all.js"></script>
+        <script src="./assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+</body>
+</html>

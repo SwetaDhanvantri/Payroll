@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Details Update</title>
+     <!--assets-->
+     <link rel="stylesheet" href="./assets/css/style.css">
+      <link rel="stylesheet" href="./assets/css/bankdet.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+ 
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.css">
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+<body>
+    <div id="bankDet">     
+        <section id="bdupdate">
+        <input type="radio" id="banum" value="1" name="tractor" checked='checked' />    
+        <input type="radio" id="Exbano" value="2" name="tractor" />      
+        <input type="radio" id="bmast" value="3" name="tractor" />
+        <input type="radio" id="brmast" value="4" name="tractor" />
+        <input type="radio" id="eximbranch" value="4" name="tractor" />
+          
+          <nav  class="">   
+          <label for="banum" class='nv nav1' checked='checked'>Assign Bank Account Number</label>
+          <label for="Exbano" class='nv nav2'>Export-Import Bank Account No.</label>
+          <label for="bmast" class='nv nav3'>Bank Master</label>
+          <label for="brmast" class='nv nav4'>Branch Master</label>
+          <label for="eximbranch" class='nv nav5'>Export Import Branch</label>
+          </nav>
+          
+          <article class=' nv c1 nav1' id="form2">
+            <div class=" d-flex justify-content-center m">
+                <div class="container ">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="form-group col-xl-3 col-sm-12">
+                            <label for="form-control">Employee Code</label>
+                                <select class="form-control">
+                                <option>Select</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-xl-3 col-sm-12 ">
+                            <label for="form-control">Employee Name</label>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="form-group col-xl-3 col-sm-12 ">
+                            <label for="form-control">Designation</label>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="form-group col-xl-3 col-sm-12 ">
+                            <label for="form-control">Department</label>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+    
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="form-group col-xl-3 col-sm-12">
+                            <label for="form-control">Bank Name</label>
+                                <select class="form-control">
+                                <option>Select</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-xl-3 col-sm-12 ">
+                            <label for="form-control">Branch Name</label>
+                            <select class="form-control">
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-xl-3 col-sm-12 ">
+                            <label for="form-control">IFSC</label>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="form-group col-xl-3 col-sm-12 ">
+                            <label for="form-control">Account Number</label>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+    
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div class="form-group col-xl-3 col-sm-12">
+                            <label for="form-control">Reference No.</label>
+                                <select class="form-control">
+                                <option>Select</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-xl-3 col-sm-12 ">
+                            <label for="form-control">Month-Year</label>
+                            <select class="form-control">
+                                <option>Sep-2022</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-xl-3 col-sm-12 ">
+                            <label for="form-control">PayType</label>
+                            <select class="form-control">
+                                <option>Net Salary</option>
+                            </select>
+                        </div>
+                        <div class="form-check col-xl-3 col-sm-12 pt-4">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                            Following Parametr for Payment Mode Assignments  
+                            </label>
+                          </div>
+
+
+                          
+    
+                    </div>
+
+                    <div class="d-flex  justify-content-end mt-5">
+                        <button class="btn-save">Save</button>
+                        <button class="btn-discard">Discard</button>
+                    </div>
+
+                </div>
+            </div>
+          
+          </article>
+          
+          <article class='c2 nv nav2 ' id="form2">
+           <div class=" ">
+            <!--header -->
+            <div class="">
+             
+                <div class="page2-heading mt-3">Filter & Search Window</div>
+                
+                
+                <div class="d-flex  justify-content-end mt-5">
+                    <button class="btn-save">Search</button>
+                    <button class="btn-discard">Reset</button>
+                </div>
+
+                <div class="c2-body">
+                    <div class="">List of Employee Bank Account Details</div>
+                </div>
+
+            </div>
+            <!--header end-->
+           </div>
+          </article>
+          
+          <article class='c3 nv nav3' id="form2">
+            <div class="d-flex flex-wrap justify-content-between mt-4">
+                <div class="form-group col-xl-2 col-sm-12 ">
+                    <label for="form-control">Code</label>
+                    <input type="text" class="form-control" placeholder="Bank Code">
+                </div>
+                <div class="form-group col-xl-2 col-sm-12 ">
+                    <label for="form-control">Bank Short Name</label>
+                    <input type="text" class="form-control" placeholder="Bank Short Name">
+                </div>
+                <div class="form-group col-xl-3 col-sm-12 ">
+                    <label for="form-control">Bank Name</label>
+                    <input type="text" class="form-control" placeholder="Bank Name">
+                </div>
+                <div class="form-group col-xl-2 col-sm-12 ">
+                    <label for="form-control">IFSC Code</label>
+                    <input type="text" class="form-control" placeholder="IFSC Code">
+                </div>
+                <div class="form-group col-xl-3 col-sm-12">
+                    <label for="form-control">Bank Address</label>
+                    <input type="text" class="form-control" placeholder="Bank Address">
+                </div>
+                    
+             
+               
+            </div>
+            <div class="d-flex  justify-content-end mt-5">
+                <button class="btn-save">Save</button>
+                <button class="btn-discard">Reset</button>
+            </div>
+            <div class="bg-primary py-2 px-4 text-light ">List of Bank(s)</div>
+            <div class="d-flex justify-content-center">
+                <table class="table text-center">
+                  
+                 <thead class="">
+                    <tr>
+                        <th>Bank Code</th>
+                        <th>Bank Short Name</th>
+                        <th>Bank Name</th>
+                        <th>IFSC</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+               
+                 </thead>
+                 <tbody>
+                   
+                    <tr>
+                        <td>B001</td>
+                        <td>SBI</td>
+                        <td>State Bank Of India</td>
+                        <td>210043</td>
+                        <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                        <td><span><i class="fa-solid fa-trash"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>B001</td>
+                        <td>SBI</td>
+                        <td>State Bank Of India</td>
+                        <td>210043</td>
+                        <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                        <td><span><i class="fa-solid fa-trash"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>B001</td>
+                        <td>SBI</td>
+                        <td>State Bank Of India</td>
+                        <td>210043</td>
+                        <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                        <td><span><i class="fa-solid fa-trash"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>B001</td>
+                        <td>SBI</td>
+                        <td>State Bank Of India</td>
+                        <td>210043</td>
+                        <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                        <td><span><i class="fa-solid fa-trash"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>B001</td>
+                        <td>SBI</td>
+                        <td>State Bank Of India</td>
+                        <td>210043</td>
+                        <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                        <td><span><i class="fa-solid fa-trash"></i></span></td>
+                    </tr>
+
+
+                 </tbody>
+                </table>
+            </div>
+            <div class="bg-primary py-2 px-4 text-light mb-4"><p>Total Records: 105</p></div>
+            
+        
+          </article>
+          
+          <article class='c4 nv nav4 ' id="form2">
+            <div class="d-flex flex-wrap justify-content-between mt-4 ">
+                <div class="form-group col-xl-3 col-sm-12 ">
+                    <label for="form-control">Bank</label>
+                    <select class="form-control">
+                        <option>Select</option>
+                        </select>
+                </div>
+                <div class="form-group col-xl-3 col-sm-12 ">
+                    <label for="form-control">Branch Code</label>
+                    <input type="text" class="form-control" placeholder="Branch Code">
+                </div>
+                <div class="form-group col-xl-3 col-sm-12 ">
+                    <label for="form-control">Branch Name</label>
+                    <input type="text" class="form-control" placeholder="Branch Name">
+                </div>
+                <div class="form-group col-xl-3 col-sm-12 ">
+                    <label for="form-control">IFSC Code</label>
+                    <input type="text" class="form-control" placeholder="IFSC Code">
+                </div>
+               
+             </div>
+             <div class="d-flex flex-wrap justify-content-between">
+                <div class="form-group col-xl-3 col-sm-12 ">
+                    <label for="form-control">MICR Code</label>
+                    <input type="text" class="form-control" placeholder="MICR Code">
+                </div>
+                <div class="form-group col-xl-3 col-sm-12 ">
+                    <label for="form-control">Location</label>
+                    <input type="text" class="form-control" placeholder="MICR Code">
+                </div>
+                <div class="form-group col-xl-3 col-sm-12">
+                    <label for="form-control">Bank Address</label>
+                    <input type="text" class="form-control" placeholder="Bank Address">
+                </div>
+                <div class="col-xl-3 col-sm-12">
+                    
+                    <div class="d-flex  justify-content-end mt-3">
+                        <button class="btn-save">Save</button>
+                        <button class="btn-discard">Reset</button>
+                    </div>
+                </div>
+             </div>
+
+
+            <div class="bg-primary py-2 px-4 text-light mt-4">List of Branch(s)</div>
+            <div class="d-flex justify-content-center">
+                <table class="table text-center">
+                  
+                 <thead class="">
+                    <tr>
+                        <th>Bank</th>
+                        <th>Branch Code</th>
+                        <th>Branch Name</th>
+                        <th>IFSC Code</th>
+                        <th>MICR Code</th>
+                        <th>Location</th>
+                       
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+               
+                 </thead>
+                 <tbody>
+                   
+                    <tr>
+                        <td>PNB</td>
+                        <td>110032</td>
+                        <td>Faridabad</td>
+                        <td>210043</td>
+                        <td>AB00234</td>
+                        <td>Faridabad</td>
+                        <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                        <td><span><i class="fa-solid fa-trash"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>PNB</td>
+                        <td>110032</td>
+                        <td>Faridabad</td>
+                        <td>210043</td>
+                        <td>AB00234</td>
+                        <td>Faridabad</td>
+                        <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                        <td><span><i class="fa-solid fa-trash"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>PNB</td>
+                        <td>110032</td>
+                        <td>Faridabad</td>
+                        <td>210043</td>
+                        <td>AB00234</td>
+                        <td>Faridabad</td>
+                        <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                        <td><span><i class="fa-solid fa-trash"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>PNB</td>
+                        <td>110032</td>
+                        <td>Faridabad</td>
+                        <td>210043</td>
+                        <td>AB00234</td>
+                        <td>Faridabad</td>
+                        <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                        <td><span><i class="fa-solid fa-trash"></i></span></td>
+                    </tr>
+                    <tr>
+                        <td>PNB</td>
+                        <td>110032</td>
+                        <td>Faridabad</td>
+                        <td>210043</td>
+                        <td>AB00234</td>
+                        <td>Faridabad</td>
+                        <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                        <td><span><i class="fa-solid fa-trash"></i></span></td>
+                    </tr>
+
+
+                 </tbody>
+                </table>
+            </div>
+            <div class="bg-primary py-2 px-4 text-light mb-4"><p>Total Records: 105</p></div>
+          </article>
+
+          <article class='c5 nv nav5 ' id="form2">
+          <div class="d-flex justify-content-between p-4 mt-4">
+            <div class="form-group col-xl-4 col-sm-12 ">
+                <label for="form-control">Bank</label>
+                <select class="form-control">
+                    <option>Select Bank</option>
+                    </select>
+            </div>
+            <div class=" col-xl-4 col-sm-12">
+                <label for="formFile" class="form-label">Select Excel File to Import</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+            <div class="d-flex  justify-content-end col-xl-4 col-sm-12 mt-3">
+                <button class="btn-save">Import & Save </button>
+                <button class="btn-discard">Export</button>
+            </div>
+          </div>
+         
+          </article>
+        </section>
+    </div>
+  
+
+         <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+     
+        <script src="./assets/fontawesome-free-6.2.0-web/js/all.js"></script>
+        <script src="./assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+</body>
+</html>
