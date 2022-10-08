@@ -82,7 +82,16 @@ padding: 0;
     color: #fff;
     margin: 0 !important;
   }
-  
+  .title-grey{
+   
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    padding: 3px 10px;
+     background-color: #61bbc9;
+    color: #fff;
+    margin: 0 !important;
+  }
   .title-asset{
     border-radius: 6px;
     font-weight: 400;
@@ -122,11 +131,38 @@ padding: 0;
 
   #check input{
     margin: 0;
+    
     padding: 0;
     position: static;
    
   }
 
-  #form-empconfig input{
-    
+ #form-emp{
+  font-size: 14px;
+ }
+ #form-emp label{
+ color: #000;
+ }
+  .rreason{
+    height: 100px;
+    overflow-y: scroll;
   }
+  .fa-arrow-right-long{
+    color: #00416a;
+  }
+  #sub-msg p{
+    color: #00416a;
+    font-weight: bold;
+    margin-top: 46px;
+    font-size: 14px;
+  }
+
+  .slash{
+    font-size: 16px;
+    font-weight: 600;
+    margin:4px 10px;
+  }
+
+.table-contract{
+  font-size: 12px;
+}

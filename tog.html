@@ -1,0 +1,32 @@
+
+<html>
+    <head>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript">
+    
+    $(function() {
+        $("[name=toggler]").click(function(){
+                $('.toHide').hide();
+                $("#blk-"+$(this).val()).show('slow');
+        });
+     });
+     
+    </script>
+     
+    </head>
+     
+    <body>
+     
+    <label><input id="rdb1" type="radio" name="toggler" value="1" />Money</label>
+    <label><input id="rdb2" type="radio" name="toggler" value="2" />Interest</label>
+    
+    <div id="blk-1" class="toHide" style="display:none">
+        money
+    </div>
+    <div id="blk-2" class="toHide" style="display:none">
+        interest
+    </div>
+     
+    </body>
+    </html>
+    

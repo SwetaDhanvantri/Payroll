@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Manpower Recruitment Status </title>
+
+     <!--assets-->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/assetstype.css">
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+ 
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.css">
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+<body>
+    
+   <div class="main-section" id="page-head">
+    <!---->
+            <!--head-->
+            <div class="p-4 m-4">
+                <p class="title-asset my-4">Update Manpower Recruitment Status</p>   
+                            
+                <div class="row">
+
+                <div class="form-group col-xl-2 col-sm-12">
+                
+                        <select class="form-control">
+                        <option>Select Project</option>
+                        </select>
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                
+                    <select class="form-control">
+                    <option>Select</option>
+                    </select>
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                
+                <select class="form-control">
+                <option>Select Designation</option>
+                </select>
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                
+                <select class="form-control">
+                <option>Select Coordinator</option>
+                </select>
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                
+                <select class="form-control">
+                <option>Select Coordinator</option>
+                </select>
+                </div>
+                <div class="col-xl-2 col-sm-12">
+                    <button class="cr1">Update Record</button>
+                </div>
+
+            
+        </div>
+        <!--head-->
+            <div id="bankDet">     
+                <section id="bdupdate">
+                <input type="radio" id="banum" value="1" name="tractor" checked='checked' />    
+                <input type="radio" id="Exbano" value="2" name="tractor" />      
+                <input type="radio" id="bmast" value="3" name="tractor" />
+                <input type="radio" id="brmast" value="4" name="tractor" />
+                <input type="radio" id="eximbranch" value="4" name="tractor" />
+            
+                
+                <nav  class="">  
+                    
+                <label for="banum" class='nv nav1' checked='checked'>Contract Details</label>
+                <label for="Exbano" class='nv nav2'>Position Details</label>
+                <!-- <label for="bmast" class='nv nav3'>Bank Master</label>
+                <label for="brmast" class='nv nav4'>Branch Master</label>
+                <label for="eximbranch" class='nv nav5'>Export Import Branch</label> -->
+                </nav>
+                
+                <article class=' nv c1 nav1' id="form2">
+                    <table class="table table-responsive table-contract">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="form-check" id="check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                </div>
+                            </th>
+                            <th>Position_ID</th>
+                            <th>Designation</th>
+                            <th>Position_Type</th>
+                            <th>Total_MM</th>
+                            <th>Type</th>
+                            <th>Emp_Code</th>
+                            <th>Emp_Name</th>
+                            <th>Status</th>
+                            <th>Progress%</th>
+                            <th>Target_date</th>
+                            <th>Pending_since</th>
+                            <th>REV_loss_till_date</th>
+                            <th>Per_month_rate</th>
+                            <th>CV_finallized_by</th>
+                            <th>CV_formatted_by</th>
+                            <th>CV_submitted_on</th>
+                            <th>Client_interaction_date</th>
+                            <th>Client_action</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>#00321</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <div class="p-2"><p><b>Total Positions: 0</b></p></div>
+                </article>
+                
+                <article class='c2 nv nav2 pb-3' id="form2">
+                    <div class="row my-2 p-2">
+
+                        <div class="form-group col-xl-2 col-sm-12">
+                            <label for="form-control">Project Mob date</label>
+                            <input type="text" class="form-control" placeholder="Project Mob date">
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12">
+                            <label for="form-control">Recruiter</label>
+                            <select class="form-control">
+                                <option>Select Recruiter</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12">
+                            <label for="form-control">Coordinator</label>
+                            <select class="form-control">
+                                <option>Select</option>
+                                </select>
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12">
+                            <p class="">Target Days/Date</p>
+                            <div class="d-flex">
+                            <div class="">
+                                <input type="number" class="form-control" placeholder="Days">
+                            </div>
+                            <div class="">
+                                <input type="text" class="form-control" placeholder="Date">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-xl-2 col-sm-12">
+                            <label for="form-control">Remarks</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Enter Remarks"></textarea>
+                        </div>
+                    
+                        <div class="form-group col-xl-2 col-sm-12">
+                            <label for="form-control">Finallized By</label>
+                            <select class="form-control">
+                                <option>-Select-</option>
+                                </select>
+                        </div>
+                </div>
+                
+                <div class="row">
+
+                    
+                    <div class="form-group col-xl-2 col-sm-12">
+                        <label for="form-control">CV formatted by</label>
+                        <select class="form-control">
+                            <option>-Select-</option>
+                            </select>
+                    </div>
+                    <div class="form-group col-xl-2 col-sm-12">
+                        <label for="form-control">CV submitted on</label>
+                        <input type="text" class="form-control" placeholder="DOL">
+                    </div>
+                
+                    <div class="form-group col-xl-2 col-sm-12">
+                        <p class="">DOJ/Delayed Month</p>
+                            <div class="d-flex">
+                            <div class="">
+                                <input type="number" class="form-control" placeholder="DOJ">
+                            </div>
+                            <div class="">
+                                <input type="text" class="form-control" placeholder="DM">
+                            </div>
+                            </div>
+                    </div>
+                    <div class="form-group col-xl-2 col-sm-12">
+                        <label for="form-control">CTC Fixed/Consent</label>
+                        <input type="text" class="form-control" placeholder="CTC Fixed/Consent">
+                    </div>
+                    <div class="form-group col-xl-2 col-sm-12">
+                        <label for="form-control">Recruitment Type</label>
+                        <select class="form-control">
+                            <option>Employee</option>
+                            </select>
+                    </div>
+                    <div class="form-group col-xl-2 col-sm-12">
+                        <label for="form-control">Employee</label>
+                        <select class="form-control">
+                            <option>-Select-</option>
+                            </select>
+                    </div>
+                
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-xl-2 col-sm-12">
+                    <label for="form-control">Name for Billing</label>
+                    <input type="text" class="form-control" placeholder="Name for Billing">
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                    <label for="form-control">Position Status</label>
+                    <select class="form-control">
+                        <option>Vacant</option>
+                    </select>
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                    <label for="form-control">Client Interaction Date</label>
+                    <input type="date" class="form-control" placeholder="Client Interaction Date">
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                    <label for="form-control">Client Action</label>
+                    <select class="form-control">
+                        <option>Pending</option>
+                    </select>
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                    <label for="form-control">Billed QTY Total</label>
+                    <input type="text" class="form-control" placeholder="Billed QTY Total">
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                    <label for="form-control">Demob Date</label>
+                    <input type="text" class="form-control" placeholder="Demob Date">
+                </div>
+            
+        </div>
+            <div class="row">
+
+                <div class="form-group col-xl-2 col-sm-12">
+                    <label for="form-control">Billed amount till date</label>
+                    <input type="text" class="form-control" placeholder="Billed amount">
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                    <label for="form-control">Bill No.</label>
+                    <input type="text" class="form-control" placeholder="Bill No.">
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                    <label for="form-control">Const. MM</label>
+                    <input type="text" class="form-control" placeholder="Const. MM">
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                    <label for="form-control">EOT MM</label>
+                    <input type="text" class="form-control" placeholder="EOT MM">
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                    <label for="form-control">Main MM</label>
+                    <input type="text" class="form-control" placeholder="Main MM">
+                </div>
+                <div class="form-group col-xl-2 col-sm-12">
+                    <label for="form-control">Main EOT MM</label>
+                    <input type="text" class="form-control" placeholder="Main EOT MM">
+                </div>
+            
+        </div>
+        <div class="row ">
+
+            <div class="form-group col-xl-2 col-sm-12">
+                <label for="form-control">Rev contract rate </label>
+                <input type="text" class="form-control" placeholder="Rev contract rate">
+            </div>
+            <div class="form-group col-xl-2 col-sm-12">
+                <label for="form-control">Rev cnt amount</label>
+                <input type="text" class="form-control" placeholder="Rev cnt amount">
+            </div>
+            <div class="form-group col-xl-2 col-sm-12">
+                <label for="form-control">Pending since</label>
+                <input type="date" class="form-control" placeholder="Pending since">
+            </div>
+            <div class="form-group col-xl-2 col-sm-12">
+                <label for="form-control">Rev loss till date</label>
+                <input type="text" class="form-control" placeholder="Rev loss till date">
+            </div>
+            <div class="form-group col-xl-2 col-sm-12">
+                <label for="form-control">Rev cnt amount</label>
+                <input type="text" class="form-control" placeholder="Rev cnt amount">
+            </div>
+            <div class="form-group col-xl-2 col-sm-12">
+                <label for="form-control">Pending Since</label>
+                <input type="text" class="form-control" placeholder="Pending Since">
+            </div>
+        
+        </div>
+          </article>
+          
+          <!-- <article class='c3 nv nav3' id="form2">
+           
+          </article>
+           
+          <article class='c4 nv nav4 ' id="form2">
+          </article>
+
+          <article class='c5 nv nav5 ' id="form2">
+          </article>  -->
+        </section>
+    </div>
+
+ 
+        
+   </div>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+   <script src="./assets/fontawesome-free-6.2.0-web/js/all.js"></script>
+   <script src="./assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+</body>
+</html>

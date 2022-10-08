@@ -32,9 +32,9 @@
           <label for="eximbranch" class='nv nav5'>Export Import Branch</label> -->
           </nav>
           
-          <article class=' nv c1 nav1' id="form2">
-            <div class="p-2">
-            <div class="row">
+          <article class=' nv c1 nav1 ' id="form2">
+           <div class="px-4 pt-4" id="form-emp">
+            <div class="row ">
                 <div class="col-xl-6 d-flex justify-content-between">
                     <div class="form-check">
                         <input type="radio" class="form-check-input" id="exampleCheck1">
@@ -57,10 +57,240 @@
                    
                 </div>
             </div>
-            <div class="row">
-
+            <div class="row my-2">
+                <div class="form-group col-xl-3 col-sm-12 ">
+                    <label for="form-control">Template Id</label>
+                    <select class="form-control">
+                        <option>New Template</option>
+                        </select>
+                </div>
+                <div class="form-group col-xl-3 col-sm-12 ">
+                    <label for="form-control">Template Description</label>
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="form-group col-xl-3 col-sm-12 ">
+                    <label for="form-control">Exit Interview Request Level</label>
+                    <select class="form-control">
+                        <option>First level of Request Level</option>
+                    </select>
+                       
+                </div>
+                <div class="form-group col-xl-3 col-sm-12 " id="sub-msg">
+                    <p>Employee <span class="mx-2"><i class="fa-solid fa-arrow-right-long"></i></span> RM</p>
+                </div>
             </div>
-                 
+            <div class="row my-2">
+                <div class="col-xl-6 col-sm-12 ">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Send Exit Interview Request 
+                            & Approval Mail to Approval Authority
+                        </label>
+                    </div>
+              </div>
+              <div class="col-xl-6 col-sm-12 ">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Send Exit Interview & Resignation Request &
+                        Approval Mail to Employee
+                    </label>
+                </div>
+            </div>
+           </div>
+             <div class="row mt-2 my-2">
+                    <div class="col-xl-6 col-sm-12 ">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Show Resignation/Exit Interview
+                                Request & Approval Status on Resignation/Exit Interview Requisition 
+                            </label>
+                        </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 ">
+                    
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">
+                            Show message on Exit Interview Requisition
+                        </label>
+                    </div>
+                   
+                 </div>
+                </div>
+                
+                <div class="row my-2">
+                    <div class="col-xl-6 col-sm-12 ">
+                        <div class="form-check mt-3">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">
+                                For FNM, Clearance Approval is Mandatory
+                            </label>
+                        </div>
+                  </div>
+                  <div class="col-xl-6 col-sm-12 ">
+                    <p class="my-1">System Mail Body Format(s)</p>
+                    <div class="row">
+                        <div class="col-xl-4 col-sm-12">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">
+                                  Default Format
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-4 col-sm-12">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">
+                                   Custom Format
+                                </label>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                 </div>
+
+                </div>
+                <div class="row my-2">
+                    <div class="form-group col-xl-3 col-sm-12 ">
+                        <label for="form-control">Resignation Request Level</label>
+                        <select class="form-control">
+                            <option>First Level of RM </option>
+                            </select>
+                    </div>
+                    <div class="form-group col-xl-3 col-sm-12 " id="sub-msg">
+                        <p class="">Employee <span class="mx-2"><i class="fa-solid fa-arrow-right-long"></i></span> RM</p>
+                    </div>
+                   
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-sm-12">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">
+                               Send Resignation Request & Approval Mail to Approval Authority
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-sm-12">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">
+                               Send Withdrow option on Resignation Approval from ESS
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-sm-12">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">
+                              Show soft copy uploader option on Resignation Requisition
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-sm-12">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">
+                               Mandatory soft copy uploader option on Resignation Requisition
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row my-2">
+                    <div class="col-xl-6 col-sm-12">
+                        <p>Salary Hold Configuration</p>
+                        <div class="row ">
+                          <div class="col-xl-4">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">
+                                 None
+                                </label>
+                            </div>
+                          </div>
+                          <div class="col-xl-4">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">
+                                Requisition
+                                </label>
+                            </div>
+                          </div>
+                          <div class="col-xl-4">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">
+                                Approval
+                                </label>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-xl-6 col-sm-12">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">
+                              Hold Salary from defined months before DOL month. For e.g. DOL is 
+                              22 Dec & value is 2. The salary would be put on from Oct. 
+                            </label>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-xl-6 col-sm-12">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">
+                              Enable Approval/Rejection Through Email on Resignation
+                            </label>
+                        </div> 
+                    </div>
+                    <div class="col-xl-6 col-sm-12">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">
+                              Show employee registration reason to RM
+                            </label>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-xl-6 col-sm-12">
+                        <div class="form-group ">
+                            <label for="form-control">CC Email Id</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-sm-12">
+                        <div>
+                            <p class="rreason">
+                                Loream Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Temporibus veritatis alias repellat odit expedita esse facilis nemo quia suscipit quos. 
+                                Aperiam vero, aliquid porro nesciunt ratione adipisci a architecto officiis. Lorem,
+                                 ipsum dolor sit amet consectetur adipisicing elit. Natus dolores molestias obcaecati 
+                                 cumque magni repellendus soluta. Tenetur, minima. 
+                                Vitae repudiandae error excepturi nihil voluptatem veritatis aut ea minima nulla quam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-end my-5">
+                    <button class="btn-srecord">Save</button>
+                    <button class="btn-del">Delete</button>
+                    <button class="btn-reset">Reset</button>
+                    <button class="btn-cr">Go to create reason</button>
+                </div>
                   
             </div>
           
