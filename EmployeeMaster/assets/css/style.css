@@ -44,7 +44,7 @@ body {
     pointer-events: none;
     box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
 }
-header.box {
+header .box {
   background: #00416a;
   z-index: 100;
   cursor: initial;
@@ -147,12 +147,12 @@ body{
 
 /* page 2 start*/
 .page2-heading{
-  background-color: #98c1d9;
-  color: #f7f7f7;
+  background-color:#e9e9fc;
+  color: #333;
+  font-weight: 400;
+  border-radius: 4px;
+  padding: 3px 8px 3px 8px;
   font-weight: 500;
-  text-transform: uppercase;
-  padding: 3px 5px 3px 5px;
-;
 }
 .page2-title{
   font-weight: 400;
@@ -458,7 +458,13 @@ a:hover {color: rgba(0,0,0,.2)}
   text-align: left;
 }
 
-
+.btn-success{
+   margin: 5px 0px; 
+  border-radius: 4px !important;
+  height: 36px;
+  width: auto;
+  padding: 0 10px;
+}
 
 .btn-record{
   background-color:#FF5733;

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Temp. Employee Code</title>
+       <!---create update start-->
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+      
+     <!--assets-->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/eletbulk.css">
+  
+     <link rel="stylesheet" href="./assets/bootstrap-5.2.0-dist/css/bootstrap.css">
+     <link rel="stylesheet" href="./assets/bootstrap-5.2.0-dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+ 
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.css">
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css">
+     <style>
+       .section1{
+        display: none;
+       }
+       .section2{
+        display: none;
+      }
+     </style>
+</head>
+<body>
+     <!---create update start-->
+    <section class="" id="elet-issue">
+      
+        <div class="crup-title"><p>Generate Temp. Employee Code</p></div>
+        <div class="row my-2">
+          <div class="col-xl-6">
+            <div class="d-flex flex-wrap justify-content-start my-2" id="rns">
+                <div class="form-check " id="check1">
+                  
+                    <label><input id="rdb1" type="radio" name="toggler" value="1" />Individual</label>
+                   </div>
+          
+                <div class="form-check " id="check2">
+                
+                 <label><input id="rdb2" type="radio" name="toggler" value="2" /> Import-Export(Bulk) </label>
+               </div>
+            </div>
+
+            
+            <div id="blk-1" class="toHide" style="display:none">
+              <div class="container">
+
+                <div class="row">
+                  <div class="col  col-sm-12">
+                    <div class="form-group">
+                      <label for="form-control">Temporary code</label>
+                      <input type="text" class="form-control" placeholder="Temporary code">
+                  </div>
+                  </div>
+                </div>
+
+                <div class="row my-2">
+                   <div class="col-xl-6 col-sm-12">
+                    <div class="form-group ">
+                      <label for="form-control">First Name</label>
+                      <input type="text" class="form-control" placeholder="First Name">
+                  </div>
+                   </div>
+
+                   <div class="col-xl-6 col-sm-12">
+                    <div class="form-group ">
+                      <label for="form-control">Last Name</label>
+                      <input type="text" class="form-control" placeholder="Last Name">
+                  </div>
+                </div>
+
+                </div>
+
+                <div class="row my-2">
+                  <div class="col-xl-6 col-sm-12">
+                  <div class="form-group ">
+                    <label for="form-control">Mobile No.</label>
+                    <input type="text" class="form-control" placeholder="Mobile No.">
+                  </div>
+                  </div>
+
+                <div class="col-xl-6 col-sm-12">
+                 <div class="form-group ">
+                   <label for="form-control">Email </label>
+                   <input type="email" class="form-control" placeholder="Email Id">
+                 </div>
+               </div>
+
+            </div>
+
+              <div class="d-flex justify-content-sr mt-3">
+                <button class="btn-srecord">Save</button>
+                <button class="btn-reset">Reset</button>
+              </div>
+             
+            </div>
+            </div>
+
+            <div id="blk-2" class="toHide" style="display:none">
+              <div class="container my-2">
+                <div class="form-group ">
+                  <label class="form-label" for="customFile">Choose Excel File to Import</label>
+                  <input type="file" class="form-control" id="customFile" />
+                </div>
+                <div class="d-flex justify-content-sr mt-3 my-2">
+                  <button class=" btn-srecord">Export Format</button>
+                  <button class="btn btn-success">Import & Save</button>
+                  <button class=" btn-reset">Reset</button>
+                </div>
+
+              </div>
+            </div>
+
+        </div>
+       
+        <div class="col-xl-6">
+            <div class="container">
+              <div class="page2-heading mt-4 my-2">Temporary Employee List</div>
+              <div class="row my-2">
+                <div class="col">
+                  <div class="form-group">
+                       <select class="form-control">
+                         <option>Temp. Joined + Link Expired</option>
+                        </select>
+                </div>
+                <p class="my-2"><b>0 Record Found</b></p>
+                </div>
+                
+              </div>
+            </div>
+        </div>     
+    </div>
+   
+    
+
+
+<script>
+    $(function() {
+    $("[name=toggler]").click(function(){
+            $('.toHide').hide();
+            $("#blk-"+$(this).val()).show('slow');
+    });
+ });
+</script>
+  
+        <!-- jQuery and Bootstrap Bundle (includes Popper)-->
+       
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+        <script src="./assets/bootstrap-5.2.0-dist/js/bootstrap.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+       <script src="./assets/bootstrap-5.2.0-dist/js/bootstrap.js"></script>
+       <script src="./assets/fontawesome-free-6.2.0-web/js/all.js"></script>
+       <script src="./assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+</body>
+</html>
