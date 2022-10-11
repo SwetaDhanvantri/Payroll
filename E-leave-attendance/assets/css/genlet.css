@@ -1,0 +1,38 @@
+
+#genlet{
+    width: 90%;
+    margin-top: 40px;
+    border-radius: 6px;
+    margin-left: 5%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+.genlet-title{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 5px 20px;
+    background-color: #00416a;
+    color: #fff;
+   
+}
+
+.genlet-title p{
+    margin: 0;
+    font-size: 18px;
+   }
+
+   .btn-appointment{
+    width: 300px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    height: 47px;
+  
+   }
+
+   .form-group{
+    font-size: 16px;
+  }
+  .form-control{
+    font-size: 14px !important;
+  }

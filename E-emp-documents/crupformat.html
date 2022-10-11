@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create/Update Letter Type</title>
+     <!--assets-->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/crupformat.css">
+  
+     <link rel="stylesheet" href="./assets/bootstrap-5.2.0-dist/css/bootstrap.css">
+     <link rel="stylesheet" href="./assets/bootstrap-5.2.0-dist/css/bootstrap.min.css" >
+ 
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.css">
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+<body>
+     <!---create update start-->
+    <section class="" id="crupdate">
+       
+        <div class="crup-title"><p>Create/Update Letter Format</p></div>
+       <div id="head-notice">
+        <div class="row">
+            <div class="col-xl-6 col-sm-12">
+                <div class="atten col-12">
+                    <p class="">Attention Please </p>
+                        <ol >
+                            <li>
+                               Don't paste text directly from any document into the editor. Use the option for paste contents.
+                            </li>
+                            <li>If you paste it directly from the document then letter format might be wrongly saved.</li>
+                            <li> For best view use internet explorer.</li>
+                        </ol>
+  
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-sm-12" id="filter">
+                   
+                <div class="form-group col-xl-4 col-sm-12 ">
+                    <label for="form-control">Filter Payhead</label>
+                    <select class="form-control">
+                      <option>-Select All-</option>
+                     
+                    </select>
+                </div>
+        
+            </div>
+        </div>
+       </div>
+           
+        <div class="row p-3">
+            <div class="col-xl-6 col-sm-12">
+               <div class="row" >
+                    <div class="col-xl-6 col-sm-12">
+                        <div class="form-group m-2">
+                            <label for="form-control">Document Type</label>
+                            <select class="form-control">
+                                <option>Select Report Type</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xl-6  col-sm-12">
+                        <div class="form-group m-2">
+                            <label for="form-control">Template Name</label>
+                            <input type="text" class="form-control" placeholder="Template Name">
+                        </div> 
+                    </div>
+                        
+                  
+                </div>
+                <div class="d-flex">
+                    <div class="form-group  col-xl-12 col-sm-12">
+                        <label for="form-control">Contents</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                      </div>
+               
+                </div>
+               
+            </div>
+            <div class="col-xl-6 col-sm-12">
+                <div id="key-head " >
+                    <div class="container my-2"> <p>Please use the following keywords while designing the template-</p></div>
+                  
+                </div>
+               <div class="row" >
+                <div class="col-xl-6 col-sm-12">
+       
+                  
+                    <div class="container" id="keywords">
+                        <p>Employee Master</p>
+                        <ul>
+                            <li>Permanent Address[PERMANENT]</li>
+                            <li>Department: [EMPDEPT]</li>
+                            <li>Designation: [EMPDESIG]</li>
+                            <li>Date of Birth: [EMPDOB]</li>
+                            <li>Date of Confrmation [EMPDOC]</li>
+                            <li>Date of Letter[EMPDOL]</li>
+                            <li>Date of Birth: [EMPDOB]</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-xl-6 col-sm-12">
+                    <div class="container" id="keywords"> 
+                        <p>PayHead Amount Monthly</p><ul>
+                        <li>Permanent Address[PERMANENT]</li>
+                        <li>Department: [EMPDEPT]</li>
+                        <li>Designation: [EMPDESIG]</li>
+                        <li>Date of Birth: [EMPDOB]</li>
+                        <li>Date of Confrmation [EMPDOC]</li>
+                        <li>Date of Letter[EMPDOL]</li>
+                    </ul>
+                   </div>
+                </div>
+               </div>
+               <div class="row">
+                <div class="col-xl-6 col-sm-12">
+                    <div class="container" id="keywords">
+                        <p>PayHead Amount Yearly</p>
+                        <ul>
+                            <li>Permanent Address[PERMANENT]</li>
+                            <li>Department: [EMPDEPT]</li>
+                            <li>Designation: [EMPDESIG]</li>
+                            <li>Date of Birth: [EMPDOB]</li>
+                            <li>Date of Confrmation [EMPDOC]</li>
+                            <li>Date of Letter[EMPDOL]</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-xl-6 col-sm-12">
+                    <div class="container" id="keywords">
+                        <p>Target Structure</p>
+                        <ul>
+                            <li>Permanent Address[PERMANENT]</li>
+                            <li>Department: [EMPDEPT]</li>
+                            <li>Designation: [EMPDESIG]</li>
+                            <li>Date of Birth: [EMPDOB]</li>
+                            <li>Date of Confrmation [EMPDOC]</li>
+                            <li>Date of Letter[EMPDOL]</li>
+                        </ul>
+                    </div>
+                </div>
+               </div>
+            </div>
+
+           
+        </div>
+
+         <div class="d-flex justify-content-start flex-wrap">
+                    <button class="btn-srecord">Save</button>
+                    <button class="btn-reset">Reset</button>
+                    <button class="btn-go">Go To Employee Document</button>
+        </div>
+
+        <div class="page2-heading mt-4 ">List of Templates</div>
+      
+            <table class="table table-responsive">
+              <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Letter Type</th>
+                    <th>Letter Description</th>
+                    <th>Template Name</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>#1</td>
+                    <td>1</td>
+                    <td>Appointment letter(Existing & Temporary Employee)</td>
+                    <td>Letter 1</td>
+                    <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                    <td><span><i class="fa-solid fa-trash"></i></span></td>
+                </tr>
+                <tr>
+                    <td>#1</td>
+                    <td>1</td>
+                    <td>Appointment letter(Existing & Temporary Employee)</td>
+                    <td>Letter 1</td>
+                    <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                    <td><span><i class="fa-solid fa-trash"></i></span></td>
+                </tr>
+                <tr>
+                    <td>#1</td>
+                    <td>1</td>
+                    <td>Appointment letter(Existing & Temporary Employee)</td>
+                    <td>Letter 1</td>
+                    <td><span><i class="fa-solid fa-pen-to-square"></i></span></td>
+                    <td><span><i class="fa-solid fa-trash"></i></span></td>
+                </tr>
+              </tbody>
+            </table> 
+       
+        
+    </section>
+     <!---create update start-->
+
+        <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+        <script src="./assets/bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+       <script src="./assets/bootstrap-5.2.0-dist/js/bootstrap.js"></script>
+       <script src="./assets/fontawesome-free-6.2.0-web/js/all.js"></script>
+       <script src="./assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+</body>
+</html>

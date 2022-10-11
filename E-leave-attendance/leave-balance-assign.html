@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Balance Assignment</title>
+     <!--assets-->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/assetstype.css">
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+ 
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.css">
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+<body>
+    <div id="bankDet">     
+        <section id="bdupdate">
+        <input type="radio" id="banum" value="1" name="tractor" checked='checked' />    
+        <input type="radio" id="Exbano" value="2" name="tractor" />      
+        <input type="radio" id="bmast" value="3" name="tractor" />
+        <input type="radio" id="brmast" value="4" name="tractor" />
+        <input type="radio" id="eximbranch" value="4" name="tractor" />
+        <p class="title-asset">Leave Balance Assignment</p>
+          <nav  class="">  
+            
+          <label for="banum" class='nv nav1' checked='checked'>Import/Export opening balance</label>
+          <label for="Exbano" class='nv nav2'>Assign Leaves(Individually)</label>
+           <label for="bmast" class='nv nav3'>Assign Leaves(Groupwise)</label>
+          <!-- <label for="brmast" class='nv nav4'>Reports</label> -->
+          <!--<label for="eximbranch" class='nv nav5'>Export Import Branch</label> -->
+          </nav>
+          
+          <article class=' nv c1 nav1' id="form2">
+            <div class=" d-flex justify-content-center ">
+                <div class="container ">
+                    <div class="new-title mb-3">Import Export Leave opening balance</div>
+                    <div class="page2-heading mb-4">Filter & Search Window</div>
+                        <div class="row my-2">
+                            <div class="col-xl-3 col-sm-12">
+                                <div class="form-group">
+                                    <label for="form-control">Assign Date</label>
+                                    <input type="date" class="form-control" placeholder="Assign Date">
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-sm-12">
+                                <label for="form-control">Select Template</label>
+                                    <select class="form-control">
+                                    <option>-Select-</option>
+                                    </select>
+                            </div>
+
+                            <div class="col-xl-3 col-sm-12"></div>
+                            <div class="col-xl-3 col-sm-12">
+                                <div class="d-flex justify-content-end mt-3 my-2">
+                                    <button class=" btn-srecord">Search</button>
+                                    <button class=" btn-reset">Reset</button>
+                                  </div>
+                            </div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-xl-3 col-sm-12">
+                                    <div class="form-group ">
+                                        <label class="form-label" for="customFile">Choose Excel File to Import</label>
+                                        <input type="file" class="form-control" id="customFile" />
+                                      </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-12">
+                                    <div class="d-flex justify-content-end mt-4">
+                                        <button class=" btn-srecord">Import & Save</button>
+                                        <button class=" btn-reset">Export</button>
+                                      </div>
+                                </div>
+                               
+                            </div>
+                          
+                     </div>
+                </div>
+       
+          
+          </article>
+          
+          <article class='c2 nv nav2 ' id="form2">
+            <div class=" d-flex justify-content-center ">
+                <div class="container ">
+                    <div class="new-title mb-3">Leave assignment details</div>
+                        <div class="row my-2">
+                           
+                            <div class="col-xl-2 col-sm-12">
+                                <label for="form-control">Employee Code</label>
+                                    <select class="form-control">
+                                    <option>-Select-</option>
+                                    </select>
+                            </div>
+                            <div class="col-xl-2 col-sm-12">
+                                <div class="form-group">
+                                    <label for="form-control">Employee Name</label>
+                                    <input type="text" class="form-control" placeholder="Employee Name">
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-sm-12">
+                                <div class="form-group">
+                                    <label for="form-control">Designation</label>
+                                    <input type="text" class="form-control" placeholder="Designation">
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-sm-12">
+                                <div class="form-group">
+                                    <label for="form-control">Department</label>
+                                    <input type="text" class="form-control" placeholder="Department">
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-sm-12">
+                                <div class="form-group">
+                                    <label for="form-control">Date of Joining</label>
+                                    <input type="date" class="form-control" placeholder="Date of Joining">
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-sm-12">
+                                <div class="form-group">
+                                    <label for="form-control">Date of confirmation</label>
+                                    <input type="date" class="form-control" placeholder="Date of confirmation">
+                                </div>
+                            </div>
+                            </div>
+                            <div class="row my-2">
+                           
+                                <div class="col-xl-2 col-sm-12">
+                                    <label for="form-control">Template</label>
+                                        <select class="form-control">
+                                        <option>-Select-</option>
+                                        </select>
+                                </div>
+                                <div class="col-xl-2 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="form-control">Assign Date</label>
+                                        <input type="date" class="form-control" placeholder="Date of Joining">
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-sm-12">
+                                    <label for="form-control">Leave Code</label>
+                                        <select class="form-control">
+                                        <option>-Select-</option>
+                                        </select>
+                                </div>
+                                <div class="col-xl-2 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="form-control">Leave Description</label>
+                                        <input type="text" class="form-control" placeholder="Leave Description">
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="form-control">Proportionate Leave(A)</label>
+                                        <input type="text" class="form-control" placeholder="Designation">
+                                    </div>
+                                </div>
+                              
+                                </div>
+                                <div class="row my-2">
+                           
+                                   
+                                    <div class="col-xl-2 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="form-control">Max. Leave</label>
+                                            <input type="text" class="form-control" placeholder="Max. Leave"><br/>
+                                            <p>(Defined in Leave Master)</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="form-control">Opening Balance(B)</label>
+                                            <input type="text" class="form-control" placeholder="Opening Balance(B)">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="form-control">Total Leave(A+B)</label>
+                                            <input type="text" class="form-control" placeholder="Max. Leave"><br/>
+                                       
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="page2-heading">List of Leave Assigned</div>
+                                    <table class="table table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th>Employee Code</th>
+                                                <th>Assign Date</th>
+                                                <th>Leave Code</th>
+                                                <th>Leave Description</th>
+                                                <th>Total Leave</th>
+                                                <th>Balance Leave</th>
+                                                <th>Starting Bal</th>
+                                                <th>Adjustment[+|-]</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                            <div class="d-flex justify-content-end mt-3 my-2">
+                                <button class=" btn-srecord">Save</button>
+                                <button class=" btn-reset">Reset</button>
+                              </div>
+                     </div>
+                </div>
+          </article>
+          
+        <article class='c3 nv nav3' id="form2">
+            <div class=" d-flex justify-content-center ">
+                <div class="container ">
+                    <div class="new-title mb-3">Assign Leave Type Group Wise</div>
+                    <div class="page2-heading">Filter & Search Window</div>
+                        <div class="row my-3">
+                            <div class="col-xl-2 col-sm-12">
+                                <label for="form-control">Template</label>
+                                    <select class="form-control">
+                                    <option>-Select-</option>
+                                    </select>
+                            </div>
+                            <div class="col-xl-2 col-sm-12">
+                                <label for="form-control">DOJ</label>
+                                <input type="date" class="form-control" placeholder="DOJ">
+                            </div>
+                            <div class="col-xl-1 col-sm-12">
+                                <div class="form-check ">
+                                    <input type="radio" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Before</label>
+                                  </div>
+                            </div>
+                            <div class="col-xl-1 col-sm-12">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">After</label>
+                                  </div>
+                            </div>
+                            <div class="col-xl-2 col-sm-12">
+                                <label for="form-control">DOC</label>
+                                <input type="datetime-local" class="form-control" placeholder="To Date">
+                            </div>
+                            <div class="col-xl-1 col-sm-12">
+                                <div class="form-check ">
+                                    <input type="radio" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Before</label>
+                                  </div>
+                            </div>
+                            <div class="col-xl-1 col-sm-12">
+                                <div class="form-check ">
+                                    <input type="radio" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">After</label>
+                                  </div>
+                            </div>
+
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-xl-4  col-sm-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">
+                                            Show Answer to Employee After Submition
+                                        </label>
+                                      </div>
+                                </div>
+                                <div class="col-xl-2  col-sm-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">
+                                            Send Mail
+                                        </label>
+                                      </div>
+                                </div>
+                                <div class="col-xl-2  col-sm-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">
+                                           Capture Screenshot
+                                        </label>
+                                      </div>
+                                </div>
+                                <div class="col-xl-3 col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Screen Capture Time(in mintues)">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end mt-3 my-2">
+                                <button class=" btn-srecord">Save</button>
+                                <button class=" btn-reset">Reset</button>
+                              </div>
+                     </div>
+                </div>
+          </article>
+           
+          <article class='c4 nv nav4 ' id="form2">
+            <div class=" d-flex justify-content-center ">
+                <div class="container ">
+                    <div class="page2-heading">Filter & Search Window</div>
+                        <div class="row my-2">
+                            <div class="col-xl-3 col-sm-12">
+                                <label for="form-control">Test Description</label>
+                                    <select class="form-control">
+                                    <option>-Select-</option>
+                                    </select>
+                            </div>
+                            <div class="col-xl-3 col-sm-12">
+                                <label for="form-control">Category</label>
+                                    <select class="form-control">
+                                    <option>-Select-</option>
+                                    </select>
+                            </div>
+                            <div class="col-xl-3 col-sm-12">
+                                <label for="form-control">Report Format</label>
+                                    <select class="form-control">
+                                    <option>-Select-</option>
+                                    </select>
+                            </div>
+                            </div>
+                            <div class="d-flex justify-content-end mt-3 my-2">
+                                <button class=" btn-success">Export in Excel</button>
+                                <button class=" btn-reset">Reset</button>
+                              </div>
+                     </div>
+                </div>
+       
+          </article>
+
+          <article class='c5 nv nav5 ' id="form2">
+            <h1>8</h1>
+          </article> 
+        </section>
+    </div>
+  
+
+         <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+     
+        <script src="./assets/fontawesome-free-6.2.0-web/js/all.js"></script>
+        <script src="./assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+</body>
+</html>

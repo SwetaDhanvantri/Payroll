@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html>
+    <title>Employee Master</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--assets-->
+<link rel="stylesheet" href="./assets/css/style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.css">
+<link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css">
+
+
+<body>
+  <div class="row">
+    <div class="col-xl-12">
+      
+    </div>
+    <div class="col-xl-12">
+      <div class="container">
+        <nav class="accordion arrows">
+          <header class="box">
+            <label for="acc-close" class="box-title">Employee Master</label>
+          </header>
+          <input type="radio" name="accordion" id="cb1" />
+          <!---emp detail-->
+          <section class="box">
+            <label class="box-title" for="cb1">Employee Details</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content" id="form">
+              <div class="d-flex flex-wrap justify-content-between">
+              <div class="d-flex flex-wrap justify-content-between">
+                <div class="profile ">
+                  <span><i class="fa-solid fa-user" style="font-size: 62px;"></i></span>
+                </div>
+                <div class="form-group px-4">
+                  <label for="exampleFormControlFile1">Profile Picture</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+              </div>
+                
+                <div class="form-group col-xl-4 col-sm-12 ">
+                  <label for="form-control">Saluation</label>
+                  <select class="form-control">
+                    <option>Select</option>
+                    <option value="Mr">Mr.</option>
+                    <option value="Mrs">Mrs.</option>
+                    <option value="ms">Ms.</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class=" d-flex justify-content-between flex-wrap">
+                <div class="form-group   col-xl-4 col-sm-12">
+                  <label for="form-control">Cost center</label>
+                  <select class="form-control">
+                    <option>Select All</option>
+                  </select>
+                </div>
+  
+                <div class="form-group  col-xl-4 col-sm-12 ">
+                  <label for="form-control">Location</label>
+                  <select class="form-control">
+                    <option>Select-All</option>
+                  </select>
+                </div>
+  
+                <div class="form-group  col-xl-4 col-sm-12 ">
+                  <label for="form-control">Unit</label>
+                  <select class="form-control">
+                    <option>Select-All</option>
+                  </select>
+                </div>
+  
+              </div>
+            <div class=" d-flex justify-content-between flex-wrap ">
+
+              
+              <div class="form-group col-xl-4 col-sm-12 ">
+                <label for="form-control">Position ID</label>
+                <select class="form-control">
+                  <option>Select-All</option>
+                </select>
+              </div>
+              <div class="form-group col-xl-4 col-sm-12 ">
+                <label for="form-control">Employee Type</label>
+                <select class="form-control">
+                  <option>Select-All</option>
+                </select>
+              </div>
+              <div class="form-group col-xl-4 col-sm-12 ">
+                <label for="form-control">Employee Code</label>
+                <select class="form-control">
+                  <option>Select-All</option>
+                </select>
+              </div>
+
+            </div>
+
+            
+              <div class="d-flex flex-wrap justify-content-between ">
+              <div class="form-group col-xl-4 col-sm-12 ">
+                <label for="form-control">First Name</label>
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="form-group col-xl-4 col-sm-12 ">
+                <label for="form-control">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+
+              <div class="form-group col-xl-4 col-sm-12 ">
+                <label for="form-control">Date of birth</label>
+                <input type="date" class="form-control" placeholder="Date of Birth">
+              </div>
+            
+            </div>
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="form-group col-xl-4 col-sm-12 ">
+                <label for="form-control">Gender</label>
+                <select class="form-control">
+                  <option>Select</option>
+                  <option value="Mr">Male</option>
+                  <option value="Mrs">Female</option>
+                  <option value="ms">Other</option>
+                </select>
+              </div>
+              <div class="form-group col-xl-4 col-sm-12 ">
+                <label for="form-control">Father/Husband Name</label>
+                <input type="text" class="form-control" placeholder="Father/Husband Name">
+              </div>
+              <div class="form-group col-xl-4 col-sm-12 ">
+                <label for="form-control">Mother Name</label>
+                <input type="text" class="form-control" placeholder="Mother name">
+              </div>
+            </div>
+
+           
+
+            </div>
+          </section>
+           <!---emp detail end-->
+          <input type="radio" name="accordion" id="cb2" />
+          <section class="box" >
+            <label class="box-title" for="cb2">Posting Information</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content" id="form">
+              <div class="d-flex  flex-wrap justify-content-between ">
+
+                <div class="form-group col-xl-3 col-sm-12">
+                  <label for="form-control">Designation</label>
+                  <select class="form-control">
+                    <option>Select All</option>
+                  </select>
+                </div>
+  
+                <div class="form-group col-xl-3 col-sm-12">
+                  <label for="form-control">Catogery</label>
+                  <select class="form-control">
+                    <option>Select-All</option>
+                  </select>
+                </div>
+  
+                <div class="form-group col-xl-3 col-sm-12">
+                  <label for="form-control">Department</label>
+                  <select class="form-control">
+                    <option>Select-All</option>
+                  </select>
+                </div>
+  
+                <div class="form-group col-xl-3 col-sm-12">
+                  <label for="form-control">Reporting HR</label>
+                  <select class="form-control">
+                    <option>Select-All</option>
+                  </select>
+                </div>
+              </div>
+             
+               
+            
+              <div class="d-flex flex-wrap justify-content-between">
+                 
+                <div class="form-group col-xl-3 col-sm-12">
+                  <label for="form-control">Staff ID</label>
+                  <select class="form-control">
+                    <option>Select-All</option>
+                  </select>
+                </div>
+                <div class="form-group  col-xl-3 col-sm-12">
+                  <label for="form-control">Level</label>
+                  <select class="form-control">
+                    <option>Select-All</option>
+                  </select>
+                </div>
+                <div class="form-group  col-xl-3 col-sm-12">
+                  <label for="form-control">Sub Department</label>
+                  <select class="form-control">
+                    <option>Select-All</option>
+                  </select>
+                </div>
+                <div class="form-group  col-xl-3 col-sm-12">
+                  <label for="form-control">Grade</label>
+                  <select class="form-control">
+                    <option>Select-All</option>
+                  </select>
+                </div>
+                <div class="form-group  col-xl-3 col-sm-12">
+                  <label for="form-control">Reporting Manager</label>
+                  <select class="form-control">
+                    <option>Select-All</option>
+                  </select>
+                </div>
+
+              </div>
+
+            </div>
+          </section>
+          <input type="radio" name="accordion" id="cb3" />
+          <section class="box">
+            <label class="box-title" for="cb3">Employement Details</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content"  id="form">
+             <div class="d-flex flex-wrap justify-content-between">
+
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Date of Joining</label>
+                <input type="date" class="form-control" placeholder="Date of Joining">
+              </div>
+
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Effective From</label>
+                <input type="date" class="form-control" placeholder="Effective From">
+              </div>
+
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Old Employee Code</label>
+                <input type="number" class="form-control" placeholder="Old Employee Code">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">PAN</label>
+                <input type="text" class="form-control" placeholder="Pan Number">
+              </div>
+
+
+             </div>
+
+             <div class="d-flex flex-wrap justify-content-between">
+            
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Appointnment Letter date</label>
+                <input type="date" class="form-control" placeholder="Appointnment Letter date">
+              </div>
+
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Leave Assign Date</label>
+                <input type="date" class="form-control" placeholder="Effective From">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Official Mail ID</label>
+                <input type="email" class="form-control" placeholder="Old Employee Code">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">CTC Ammount(Concent)</label>
+                <input type="text" class="form-control" placeholder="Pan Number">
+              </div>
+            </div>
+
+             <div class="d-flex flex-wrap justify-content-between">
+              
+             
+
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Leave Template</label>
+                <select class="form-control">
+                  <option>Select-All</option>
+                </select>
+              </div>
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Send Email Also to</label>
+                <input type="email" class="form-control" placeholder="Send Email Also to">
+              </div>
+  
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Notice Days</label>
+                <input type="number" class="form-control" placeholder="Notice Days">
+              </div>
+              <div class="form-group  col-xl-3 col-sm-12">
+                
+              </div>
+
+               </div>
+           
+
+            </div>
+          </section>
+
+          <!---section 4-->
+          <input type="radio" name="accordion" id="cb4" />
+          
+          <section class="box">
+            <label class="box-title" for="cb4">Date-Dimenstion & Other Informations</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content" id="form">
+            <div class="d-flex flex-wrap justify-content-between ">
+
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Confirmation Date</label>
+                <input type="date" class="form-control" placeholder="Confirmation Date">
+              </div>
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Joining Date for form 5</label>
+                <input type="date" class="form-control" placeholder="Joining Date for form 5">
+              </div>
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Gratuity Date</label>
+                <input type="date" class="form-control" placeholder="Gratuity Date">
+              </div>
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Date of Promotion </label>
+                <input type="date" class="form-control" placeholder="Date of Promotion">
+              </div>
+           </div>
+
+            <div class="d-flex flex-wrap justify-content-between ">
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Date of Transfer </label>
+                <input type="date" class="form-control" placeholder="Date of Transfer">
+              </div>
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Contract Start Date</label>
+                <input type="date" class="form-control" placeholder="Contract start date">
+              </div>
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Contract End Date</label>
+                <input type="date" class="form-control" placeholder="Contract end date">
+              </div>
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Date of Regularization</label>
+                <input type="date" class="form-control" placeholder="Date of Regularization">
+              </div>
+              
+            
+            </div>
+            
+
+            <div class="d-flex flex-wrap justify-content-between ">
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Project Done</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+              </div>
+              <div class="d-flex flex-column col-xl-3 col-sm-12">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Finalized
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                Suspended
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group  col-xl-3 col-sm-12">
+              <label for="form-control">Leaving Date</label>
+              <input type="date" class="form-control" placeholder="Leaving Date">
+            </div>
+            <div class="form-group  col-xl-3 col-sm-12">
+              <label for="form-control">Leaving Date for Form 10</label>
+              <input type="date" class="form-control" placeholder="Leaving Date for Form 10">
+            </div>
+            
+            </div>
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Settlement Date</label>
+                <input type="date" class="form-control" placeholder="Settlement Date">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Project Income till Date</label>
+                <input type="date" class="form-control" placeholder="Project Income till Date">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Reason for Leaving</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Leaving Reason(PF ECR File)</label>
+                <select class="form-control">
+                  <option>Select-All</option>
+                </select>
+              </div>
+            </div>
+
+           
+
+            </div>
+          </section>
+          <!--section5-->
+          <input type="radio" name="accordion" id="cb5" />
+  
+          <section class="box">
+            <label class="box-title" for="cb5">Other Informations</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content" id="form">
+            <div class="d-flex flex-wrap justify-content-between ">
+
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">TDS Certificate No.</label>
+                <input type="number" class="form-control" placeholder="TDS Certificate No.">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Consider as Director</label>
+                <input type="text" class="form-control" placeholder="Enter Details">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Field 3</label>
+                <input type="text" class="form-control" placeholder="Enter Details">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Field 4</label>
+                <input type="text" class="form-control" placeholder="Enter Details">
+              </div>
+              
+           </div>
+
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Field 5</label>
+                <input type="text" class="form-control" placeholder="Enter Details">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Field 6</label>
+                <input type="text" class="form-control" placeholder="Enter Details">
+              </div>
+              
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Religion Name</label>
+                <input type="text" class="form-control" placeholder="Contract start date">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Identification Mark</label>
+                <input type="text" class="form-control" placeholder="Identification Mark">
+              </div>
+             
+            
+            </div>
+            <div class="d-flex flex-wrap justify-content-between ">
+
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Hobbies</label>
+                <input type="text" class="form-control" placeholder="Hobbies">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Billable</label>
+                <select class="form-control">
+                  <option>Billable</option>
+                  <option>Non-Billable</option>
+                </select>
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Status Domicile</label>
+                <select class="form-control">
+                  <option>Select Domicile</option>
+                  
+                </select>
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Blood Group</label>
+                <select class="form-control">
+                  <option>A+</option>
+                  <option value="">A-</option>
+                  <option value="">B+</option>
+                  <option value="">B-</option>
+                  <option value="">AB+</option>
+                  <option value="">AB-</option>
+                  <option value="">O+</option>
+                  <option value="">O-</option>
+                  
+                </select>
+              </div>
+              
+           </div>
+
+            <div class="d-flex flex-wrap justify-content-between ">
+              <div class="d-flex flex-column col-xl-3 col-sm-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                   Severe Disability
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                  Based on Attendance
+                  </label>
+                </div>
+              </div>
+
+            <div class="form-group col-xl-3 col-sm-12">
+              <label for="form-control">Details of Severe Disability</label>
+              <input type="text" class="form-control" placeholder="Details of Severe Disability">
+            </div>
+            <div class="form-group col-xl-3 col-sm-12">
+              <label for="form-control">Skill Set/keyword</label>
+              <input type="text" class="form-control" placeholder="Skill Set/keyword">
+            </div>
+            <div class="form-group col-xl-3 col-sm-12">
+              
+            </div>
+            
+            </div>
+           
+
+           
+
+            </div>
+          </section>
+          <!--section 6-->
+          
+      <input type="radio" name="accordion" id="cb6" />
+  
+      <section class="box" >
+          <label class="box-title" for="cb6">PF/ESI/PT Details</label>
+          <label class="box-close" for="acc-close"></label>
+          <div class="box-content" id="form">
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="col-xl-3 col-sm-12 d-flex flex-column pt-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                  PF Contribution
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                  VPF Contribution
+                  </label>
+                </div>
+
+              </div>
+              <div class="col-xl-3 col-sm-12">
+                <div class="form-group">
+                  <label for="form-control">PF No.</label>
+                  <input type="number" class="form-control" placeholder="Enter PF No.">
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-12">
+                <div class="form-group">
+                  <label for="form-control">PF Gross Limit</label>
+                  <input type="number" class="form-control" placeholder="PF Gross Limit">
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-12">
+                <div class="form-group">
+                  <label for="form-control">Pension Limit</label>
+                  <input type="text" class="form-control" placeholder="Pension Limit">
+                
+                </div>
+              </div>
+
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="col-xl-3 col-sm-12 pt-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                  Basic/Gross Wages
+                  </label>
+                </div>
+               
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                  Pension
+                  </label>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-12 pt-2">
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                  Contribution ESI on OT
+                  </label>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-12">
+                <div class="form-group">
+                  <label for="form-control">OT/Fooding</label>
+                  <select class="form-control">
+                    <option>None</option>
+                    
+                  </select>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-12">
+                <div class="form-group">
+                  <label for="form-control">ESI No.</label>
+                  <input type="number" class="form-control" placeholder="Enter ESI No.">
+                </div>
+              </div>
+
+            </div>
+            <div class="d-flex  flex-wrap justify-content-between">
+              <div class="col-xl-3 col-sm-12 pt-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                   Customized PF Option
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                  Professional tax Contribution
+                  </label>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-12 pt-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                  OT Part of Gross
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                  Customized OT Part of Gross
+                  </label>
+                </div>
+              </div>
+              <div class="col-xl-3 col-sm-12 pt-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Customized ESI contribution on OT
+                  </label>
+                </div>
+                
+              </div>
+              <div class="col-xl-3 col-sm-12">
+                <div class="form-group">
+                  <label for="form-control"> Dispensary Name</label>
+                  <input type="text" class="form-control" placeholder="Dispensary Name">
+                
+                </div>
+              </div>
+             
+            </div>
+             
+            <div class="d-flex  flex-wrap justify-content-between">
+              <div class="col-xl-3 col-sm-12 pt-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                  Labour Welfare fund contribution
+                  </label>
+                </div>
+              
+              </div>
+              <div class="col-xl-3 col-sm-12 pt-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                  Customized LWF option
+                  </label>
+                </div>
+              </div>
+              <div class="col-xl-6 col-sm-12">
+                <div class="form-group">
+                  <label for="form-control">Minimum hours for Saturday full day working</label>
+                  <input type="number" class="form-control" placeholder="Minimum hours for Saturday full day working">
+                
+                </div>
+              </div>
+            </div>        
+      </div>
+    
+      </section>
+
+      <!--section 7-->
+         
+          <input type="radio" name="accordion" id="cb7" />
+  
+          <section class="box" >
+            <label class="box-title" for="cb7">Address Details</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content" id="form">
+            <div class="row">
+              <div class="col-xl-6 col-sm-12">
+               <p class="mx-3"><b>Current Address</b></p>
+                <div class="d-flex flex-wrap justify-content-between">
+                  <div class="form-group col-xl-6 col-sm-12">
+                    <label for="form-control">Nationality</label>
+                    <select class="form-control">
+                      <option>Indian</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-xl-6 col-sm-12">
+                    <label for="form-control">Current Address</label>
+                    <input type="text" class="form-control" placeholder="Pension Limit">
+                  </div>
+               </div>
+
+                <div class="d-flex flex-wrap justify-content-between">
+                  
+                  <div class="form-group col-xl-6 col-sm-12">
+                    <label for="form-control">Current Country</label>
+                    <select class="form-control">
+                      <option>Select</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-xl-6 col-sm-12">
+                    <label for="form-control">Current State</label>
+                    <select class="form-control">
+                      <option>Select</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-between">
+                  
+                  <div class="form-group col-xl-6 col-sm-12">
+                    <label for="form-control">Current City</label>
+                    <select class="form-control">
+                      <option>Select</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-xl-6 col-sm-12">
+                    <label for="form-control">Current Zip Address</label>
+                    <input type="number" class="form-control" placeholder="Current Zip Address">
+                  </div>
+                </div>
+
+               </div>
+              <div class="col-xl-6 col-sm-12">
+                <div class="d-flex flex-wrap justify-content-between justify-content-between">
+                  <p class="mx-3"><b>Permanent Address</b></p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                   Same as permanent Address
+                    </label>
+                  </div>
+
+                </div>
+                <div class="d-flex flex-wrap justify-content-between">
+                
+                  <div class="form-group col-xl-12 col-sm-12">
+                    <label for="form-control">Permanent Address</label>
+                    <input type="text" class="form-control" placeholder="Pension Limit">
+                  </div>
+               </div>
+
+                <div class="d-flex flex-wrap justify-content-between">
+                  
+                  <div class="form-group col-xl-6 col-sm-12">
+                    <label for="form-control">Permanent Country</label>
+                    <select class="form-control">
+                      <option>Select</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-xl-6 col-sm-12">
+                    <label for="form-control">Permanent State</label>
+                    <select class="form-control">
+                      <option>Select</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-wrap justify-content-between">
+                  
+                  <div class="form-group col-xl-6 col-sm-12">
+                    <label for="form-control">Permanent City</label>
+                    <select class="form-control">
+                      <option>Select</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-xl-6 col-sm-12">
+                    <label for="form-control">Permanent Zip Address</label>
+                    <input type="number" class="form-control" placeholder="Current Zip Address">
+                  </div>
+                </div>
+
+             
+              </div>
+           </div>
+          </section>
+           <!--section 8-->
+         
+           <input type="radio" name="accordion" id="cb8" />
+  
+           <section class="box" >
+             <label class="box-title" for="cb8">Contact & Emergency Details</label>
+             <label class="box-close" for="acc-close"></label>
+             <div class="box-content" id="form">
+              <div><p><b>Contact Information</b></p></div>
+             <div class="d-flex flex-wrap justify-content-between">
+             
+              
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Office Phone</label>
+                <input type="number" class="form-control" placeholder="Office Phone">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Residence Phone</label>
+                <input type="number" class="form-control" placeholder="Residence Phone">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Mobile Number</label>
+                <input type="number" class="form-control" placeholder="Mobile Number">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control">Personal Email Id</label>
+                <input type="number" class="form-control" placeholder="Personal Email Id">
+              </div>
+             </div>
+
+           
+             <div class="d-flex flex-wrap  justify-content-between pr-4">
+              <p><b>Passport Information</b></p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Passport Appliciable
+                </label>
+              </div>
+             </div>
+
+             <div class="d-flex flex-wrap justify-content-between">
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control"> Passport Number</label>
+                <input type="text" class="form-control" placeholder="Passport Number">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control"> Passport Issue office</label>
+                <input type="text" class="form-control" placeholder="Passport Issue office">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control"> Passport Issue Date</label>
+                <input type="date" class="form-control" placeholder="Passport Issue Date">
+              </div>
+              <div class="form-group col-xl-3 col-sm-12">
+                <label for="form-control"> Passport Expiry Date</label>
+                <input type="date" class="form-control" placeholder=" Passport Expiry Date">
+              </div>
+             </div>
+
+             <div class="d-flex flex-wrap justify-content-between">
+              <p><b>Emergency Contact</b></p>
+             </div>
+
+             <div class="d-flex flex-wrap justify-content-between">
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control"> Name</label>
+                <input type="text" class="form-control" placeholder=" Name">
+              </div>
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Relationship</label>
+                <input type="text" class="form-control" placeholder="Passport Issue office">
+              </div>
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Address</label>
+                <input type="date" class="form-control" placeholder="Address">
+              </div>
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Email</label>
+                <input type="date" class="form-control" placeholder="Enter Email address">
+              </div>
+              <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Mobile</label>
+                <input type="date" class="form-control" placeholder="Mobile Number">
+              </div>
+             </div>
+
+             </div>
+           </section>
+
+
+            <!--section 9-->
+         
+            <input type="radio" name="accordion" id="cb9" />
+  
+            <section class="box" >
+              <label class="box-title" for="cb9">Family Details</label>
+              <label class="box-close" for="acc-close"></label>
+              <div class="box-content" id="form">
+              <div class="d-flex flex-wrap justify-content-between">
+               
+               <div class="form-group  col-xl-3 col-sm-12">
+                 <label for="form-control">Marital Status</label>
+                 <select class="form-control">
+                  <option>Single</option>
+                  <option value="Married">Married</option>
+                </select>
+               </div>
+               <div class="form-group  col-xl-3 col-sm-12">
+                <label for="form-control">Date of Marriage</label>
+                <input type="number" class="form-control" placeholder="Date of Marriage">
+              </div>
+               <div class="form-group  col-xl-3 col-sm-12">
+                 <label for="form-control">Spouse Name</label>
+                 <input type="number" class="form-control" placeholder="Spouse Name">
+               </div>
+               <div class="form-group  col-xl-3 col-sm-12">
+                 <label for="form-control">Spouse DOB</label>
+                 <input type="number" class="form-control" placeholder="Spouse date of birth">
+               </div>
+               
+              </div>
+ 
+              
+              
+ 
+              <div class="d-flex flex-wrap justify-content-between">
+               <div class="form-group  col-xl-3 col-sm-12 ">
+                 <label for="form-control">Total Children</label>
+                 <input type="number" class="form-control" placeholder="Total Children">
+               </div>
+               <div class="form-group  col-xl-3 col-sm-12 ">
+                 <label for="form-control">Total no. of school going children </label>
+                 <input type="text" class="form-control" placeholder="Enter">
+               </div>
+               <div class="form-group  col-xl-6 col-sm-12 ">
+                 <label for="form-control">No. of dependents apart from children but including spouse</label>
+                 <input type="date" class="form-control" placeholder="Enter">
+               </div>
+               <div class="form-group  col-xl-6 col-sm-12">
+                <label for="form-control">Name of dependents apart from children & spouse</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+              </div>
+               <div class="form-group col-xl-6 col-sm-12">
+                 <label for="form-control">Total no. of children in hostel</label>
+                 <input type="date" class="form-control" placeholder="Enter">
+               </div>
+              </div>
+ 
+ 
+              <div class="d-flex flex-wrap justify-content-between row mt-4">
+                <div class="col-xl-9 table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>DOB</th>
+                        <th>Relation</th>
+                        <th>Remarks</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><input type="date" class="form-control" placeholder=""></td>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea></td>
+                      </tr>
+    
+                      <tr>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><input type="date" class="form-control" placeholder=""></td>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea></td>
+                      </tr>
+    
+                      <tr>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><input type="date" class="form-control" placeholder=""></td>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea></td>
+                      </tr>
+    
+                      <tr>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><input type="date" class="form-control" placeholder=""></td>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea></td>
+                      </tr>
+    
+                      <tr>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><input type="date" class="form-control" placeholder=""></td>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><input type="date" class="form-control" placeholder=""></td>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea></td>
+                      </tr>
+    
+                      <tr>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><input type="date" class="form-control" placeholder=""></td>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea></td>
+                      </tr>
+    
+                      <tr>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><input type="date" class="form-control" placeholder=""></td>
+                        <td><input type="text" class="form-control" placeholder=""></td>
+                        <td><textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea></td>
+                      </tr>
+                    </tbody>
+                   </table>
+                </div>
+
+                <div class="col-xl-3 d-flex flex-column  justify-content-around pt-4">
+                  <div class="form-group ">
+                    <label for="form-control">Parent mediclaim</label>
+                    <select class="form-control">
+                      <option>Appliciable</option>
+                      <option value="">Not Appliciable</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="form-control">First Nominee Name</label>
+                    <input type="text" class="form-control" placeholder="Enter First Nominee Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="form-control">Relation with First Nominee</label>
+                    <input type="text" class="form-control" placeholder="Relation with First Nominee">
+                  </div>
+                  <div class="form-group">
+                    <label for="form-control">Second Nominee Name</label>
+                    <input type="text" class="form-control" placeholder="Enter First Nominee Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="form-control">Relation with Second Nominee</label>
+                    <input type="text" class="form-control" placeholder="Relation with First Nominee">
+                  </div>
+
+                </div>
+              
+              </div>
+ 
+              </div>
+            </section>
+        
+           <!--section 10-->
+         
+            <input type="radio" name="accordion" id="cb10" />
+  
+            <section class="box" >
+              <label class="box-title" for="cb10">Qualification Details</label>
+              <label class="box-close" for="acc-close"></label>
+              <div class="box-content" id="form">
+              <div class="">
+                <div class="d-flex flex-wrap justify-content-end m-2">
+                  <button class="btn btn-success">+ Add New Row</button>
+                </div>
+                <table class="table table-responsive">
+                  <tr>
+                    <th>Qualification</th>
+                    <th>Course</th>
+                    <th>Board/University</th>
+                    <th>Subjects</th>
+                    <th>Passing Year</th>
+                    <th>Total Marks</th>
+                    <th>Marks Obtained</th>
+                    <th>Percentage</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-group">
+                      <select class="form-control">
+                          <option>Post Graduation</option>
+                          <option value="">Graduation</option>
+                          <option value="">Senior Secondary</option>
+                          <option value="">Secondary</option>
+                          <option value="">Other</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                      <select class="form-control">
+                          <option>Computer science</option>
+                         <option value="">Other</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                      <select class="form-control">
+                          <option>Delhi University</option>
+                         <option value="">Mdu University</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                       <input type="text" class="form-control" placeholder="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                       <input type="text" class="form-control" placeholder="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                       <input type="text" class="form-control" placeholder="">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                       <input type="text" class="form-control" placeholder="">
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <button class="btn btn-danger">
+                        <span><i class="fa-solid fa-xmark"></i></span>
+                        </button>
+                     </div>
+                    </td>
+                  </tr>
+                </table>
+             
+                
+              
+              </div>
+ 
+              </div>
+            </section>
+            
+            <!--section 11-->
+            
+            <input type="radio" name="accordion" id="cb11" />
+  
+            <section class="box" >
+              <label class="box-title" for="cb11">Language Details</label>
+              <label class="box-close" for="acc-close"></label>
+              <div class="box-content" id="form">
+              <div class="">
+                <div class="d-flex flex-wrap justify-content-start">
+                  <button class="btn btn-success m-2">+ Add New Row</button>
+                </div>
+                <div class="d-flex flex-wrap ">
+                <table class="table table-responsive">
+                  <tr>
+                    <th>Language</th>
+                  
+                    <th>Read</th>
+                    <th>Write</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="form-group">
+                        <select class="form-control">
+                            <option>Hindi</option>
+                            <option value="">English</option>
+                            <option value="">Other</option>
+                          </select>
+                        </div>
+                    </td>
+                   
+                     <td>
+                      <div class="form-check pt-2">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      </div>
+                     </td>
+                     <td>
+                      <div class="form-check pt-2">
+                        <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      </div>
+                     </td>
+
+                    <td>
+                      <div><button class="btn btn-danger">
+                        <span><i class="fa-solid fa-xmark"></i></span>
+                      </button></div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+                
+              
+              </div>
+ 
+              </div>
+            </section>
+
+                <!--section 12-->
+            
+                <input type="radio" name="accordion" id="cb12" />
+  
+                <section class="box" >
+                  <label class="box-title" for="cb12">Previous work Experience Details</label>
+                  <label class="box-close" for="acc-close"></label>
+                  <div class="box-content" id="form">
+                  <div class="">
+                    <div class="d-flex flex-wrap justify-content-between">
+                      <div class="form-group">
+                        <label for="exampleFormControlFile1">Upload Your Resume</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                      </div>
+                      <div><button class="btn btn-success">+ Add New Row</button></div>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-between">
+                    <table class="table table-responsive">
+                      <tr>
+                        <th>Experience(in year)</th>
+                         <th>From Date</th>
+                        <th>To Date</th>
+                        <th>Job Description</th>
+                        <th></th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="form-group">
+                            <input type="number" class="form-control" placeholder="">
+                            </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="date" class="form-control" placeholder="">
+                            </div>
+                        </td>
+                        <td>
+                          <div class="form-group">
+                            <input type="date" class="form-control" placeholder="">
+                            </div>
+                        </td>
+                       
+                         <td>
+                          <div class="form-group">
+                            <input type="number" class="form-control" placeholder="">
+                            </div>
+                         </td>
+
+                        <td>
+                          <div><button class="btn btn-danger">
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                          </button></div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                    
+                  
+                  </div>
+     
+                  </div>
+                </section>
+
+                
+                <!--section 13-->
+            
+                <input type="radio" name="accordion" id="cb13" />
+  
+                <section class="box" >
+                  <label class="box-title" for="cb13">Additional Fields(Daynamic)</label>
+                  <label class="box-close" for="acc-close"></label>
+                  <div class="box-content" id="form">
+                  <div class="d-flex flex-wrap justify-content-between">
+                   
+                    <div class="form-group col-xl-4 col-sm-12">
+                      <label for="">Tax Regime</label>
+                      <select class="form-control">
+                          <option>Select</option>
+                        </select>
+                      </div>
+                         
+                    <div class="form-group col-xl-4 col-sm-12">
+                      <label for="">Pan UAN</label>
+                      <input type="text" class="form-control" placeholder="Enter">
+                      </div>
+                      <div class="form-group  col-xl-4 col-sm-12">
+                        <label for="">Aadhar</label>
+                        <input type="text" class="form-control" placeholder="Enter">
+                        </div>
+                  
+                  </div>
+     
+                  </div>
+                </section>
+      
+          <input type="radio" name="accordion" id="acc-close" />
+        </nav>
+      </div>
+    </div>
+  </div>  
+
+  
+  
+     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+ 
+    <script src="./assets/fontawesome-free-6.2.0-web/js/all.js"></script>
+    <script src="./assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+</body>
+</html>
