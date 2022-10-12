@@ -1,0 +1,81 @@
+/*create/update start*/
+#crupdate{
+    width: 90%;
+    margin-top: 40px;
+    border-radius: 6px;
+  
+    margin-left: 5%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  #head-notice{
+    padding: 10px 20px;
+  }
+  
+  .crup-title p{
+  margin: 0 0 0px 0;
+  font-size: 18px;
+  padding: 4px 10px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-weight: 400;
+  color: #FFFFF4;
+  background-color: #00416a;
+
+  
+  }
+  /*create/update end*/
+  
+  /*crup letter format start*/
+  #keywords ul{
+    list-style: none;
+    overflow-y: scroll;
+    font-size: 12px;
+    border-radius: 4px;
+    color: #777;
+    padding: 10px 15px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  }
+  .atten{
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .atten p{
+    color: #333;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  .atten ol{
+    padding-left: 20px;
+  }
+  
+  #head-notice {
+    margin-bottom: 20px;
+   color: #777;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    background-color: #FFFFF4;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  #filter .form-group{
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+  #filter label{
+    color: #333;
+  }
+  #filter select{
+   
+    font-size: 14px;
+  }
+  #filter p{
+  
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  #key-head p{
+   
+  }
+  /*crup letter format end*/
