@@ -1,10 +1,5 @@
-
-/* store emp document start */
-/* page nav end */
-body{
-  font-size: 14px;
-}
-#sempdoc{
+/* bank det start*/
+#projectMaster{
     width: 90%;
     margin-left: 5%;
     margin-top: 40px;
@@ -18,9 +13,8 @@ body{
   
   
   
-  #empdoc section {
-    width: 80%;
-    color: #fff;
+  #projectM section {
+    width: 100%;
     background: #00416a;
     /* width: 80vw;
     max-width: 40rem;
@@ -30,12 +24,16 @@ body{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     
   }
-  #empdoc article {
+  #projectM article {
+    
     border-bottom-left-radius: 6px;
+  
     border-bottom-right-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
    position: absolute;
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
    width: 100%;
+   
+   
      /*
     left: 0;
     top: 2rem;
@@ -49,7 +47,7 @@ body{
     transform-origin: center right;
    
   }
-  #empdoc article:before {
+  #projectM article:before {
     color: rgba(0,0,0,.2);
     font-size: 4rem;
     font-weight: 100;
@@ -57,38 +55,37 @@ body{
   
   }
   
-  
-  
-  #empdoc nav {
-    /* background: #fff;
-    color: #333; */
+  #projectM nav {
+    background: #fff;
     width: 100%;
     height: 2rem;
-    margin-bottom: 10px;
+  
     margin-top: 40px;
-   
+    margin-bottom: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
   }
-  #empdoc nav:after {
+  #projectM nav:after {
     content:'';
-    width: 20%;
+    width: 15%;
     height: 2rem;
     color: #fff;
     background: #00416a;
     position: absolute;
-  
+   
     transition: .5s;
   }
   
-  #empdoc input {
+  #projectM input {
     display: none;
   }
-  #empdoc label {
-    width: 20%;
-    height: 2rem;   
-    margin-bottom: 10px;
+  .projectM label {
+    width: 15%;
+    height: 2rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     padding-top: 4px;
+    padding-right: 0;
     float: left;
+    color: #333;
     text-align: center;
     cursor: pointer;
     transition: .5s;
@@ -96,68 +93,83 @@ body{
   }
   /* responsive start */
   @media only screen and (max-width: 781px)  and (min-width: 300px)  {
-    #empdoc label {
+    .projectM label {
       width: 100%;
-      box-shadow: none;
       padding: 0;
+    
   }
-  #banum1:checked ~ nav:after {
+  .projectM label {
+    
+    
+    box-shadow: none;
+   
+  }
+  #navitem1:checked ~ nav:after {
     left: 0% !important;
     top: 0;
   }
-  #Exbano1:checked ~ nav:after {
+  #navitem2:checked ~ nav:after {
     left:0% !important;
-    top:28.8%;
+    top:10.8%;
     border-top: 0 none;
   }
-  #bmast1:checked ~ nav:after {
+  #navitem3:checked ~ nav:after {
     left: 0% !important;
-    top: 64%;
+    top: 23.8%;
   }
-  
-  #empdoc nav {
-   
+  #navitem4:checked ~ nav:after {
+    left: 0% !important;
+    top:36%;
+  }
+  #navitem5:checked ~ nav:after {
+    left: 0% !important;
+    top:49%;
+  }
+  #navitem6:checked ~ nav:after {
+    left: 0% !important;
+    top:62%;
+  }
+  #projectM nav {
+    background: #fff;
     width: 100%;
-    height: 8rem;
-
+    height: 20rem;
+    color: #333;
     margin-top: 40px;
     box-shadow: 0 0 6px rgba(0,0,0,.4);
   }
-  #empdoc nav:after {
+  #projectM nav:after {
     content:'';
     width: 100%;
     height: 2rem;
-  
+    color: #fff;
+    background: #00416a;
   
   }
   
   
-  #banum1:checked ~ nav:after {
+  #navitem1:checked ~ nav:after {
     top: 0;
     left: 0 !important;
     width: 100%;
   }
-  #empdoc label {
-   
-    padding-top: 0px;
-   
-  }
+  
   
   }
   /* responsive end */
   
-  #empdoc label:hover {color: #00416a;
-  }
-  #empdoc label:before {
+  #projectM label:hover {color: #00416a;}
+  #projectM label:before {
     display: block;
-  
     font-size: 3rem;
     line-height: 3rem;
     z-index: 2;
   }
-  #banum1:checked ~ nav [for='banum'],
-  #Exbano1:checked ~ nav [for='Exbano'],
-  #bmast1:checked ~ nav [for='bmast']{
+  #navitem1:checked ~ nav [for='navitem1'],
+  #navitem2:checked ~ nav [for='navitem2'],
+  #navitem3:checked ~ nav [for='navitem3'],
+  #navitem4:checked ~ nav [for='navitem4'],
+  #navitem5:checked ~ nav [for='navitem5'],
+  #navitem6:checked ~ nav [for='navitem6'] {
     color: #fff;
     font-weight: 600;
   }
@@ -165,20 +177,32 @@ body{
   
   
   
-  #banum1:checked ~ nav:after {
+  #navitem1:checked ~ nav:after {
     left: 0;
   }
-  #Exbano1:checked ~ nav:after {
-    left:20%;
+ #navitem2:checked ~ nav:after {
+    left:15%;
     border-top: 0 none;
   }
-  #bmast1:checked ~ nav:after {
-    left: 40%;
+  #navitem3:checked ~ nav:after {
+    left: 30%;
+  }
+  #navitem4:checked ~ nav:after {
+    left: 45%;
+  }
+  #navitem5:checked ~ nav:after {
+    left: 60%;
+  }
+  #navitem6:checked ~ nav:after {
+    left: 75% ;
   }
   
-  #banum1:checked ~ .c1,
-  #Exbano1:checked ~ .c2,
-  #bmast1:checked ~ .c3{
+  #navitem1:checked ~ .c1,
+  #navitem2:checked ~ .c2,
+  #navitem3:checked ~ .c3,
+  #navitem4:checked ~ .c4,
+  #navitem5:checked ~ .c5,
+  #navitem6:checked ~ .c6{
     display: block;
     transform: scale(1);
     /* transition-delay: .5s;  */
@@ -186,33 +210,15 @@ body{
   a {color: rgba(0,0,0,.4)}
   a:hover {color: rgba(0,0,0,.2)}
   /* page nav end */
-  
-  
-  #form3 input{
-    display: inline;
-    font-size: 14px;
+
+  .icon-master{
+    font-size: 22px;
+    color:#518ff5;
   }
-    
-  #form3 select{
-    
-    font-size: 14px;
+  .icon-master:hover{
+    font-size: 22px;
+    color:#00416a;
   }
-  #form3 .container{
-    margin-top: 40px ;
- 
-   width: 100% !important;
+  #project-body input{
+    display: block;
   }
-  #form3 .form-group{
-    width: 50%;
-    font-size: 14px;
-  }
-  #form3 label{
-    width: 100%;
-    box-shadow: none;
-    margin: 0 !important;
-    padding: 0 !important;
-    text-align: left;
-    font-size: 14px;
-  }
-  
-  /* store emp document end */

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Employee Code Configuration</title>
+
+     <!--assets-->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/assetstype.css">
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+ 
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.css">
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+<body>
+    
+   <div class="" id="page-head">
+ 
+    <div class=" d-flex justify-content-center ">
+        
+        <div class="page-body "  id="form2">
+            <p class="page-title">Auto Employee Code Configuration</p>
+            
+           
+            <div class=" row m-2">
+               
+                <div class="form-group col-xl-2 col-sm-12 ">
+                    <label for="form-control">Master Type</label>
+                    <select class="form-control">
+                        <option>-Select-</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group col-xl-2 col-sm-12 ">
+                    <label for="form-control">Prefix</label>
+                    <input type="text" class="form-control" placeholder="Prefix">
+                </div>
+                <div class="form-group col-xl-2 col-sm-12 ">
+                    <label for="form-control">Suffix</label>
+                    <input type="text" class="form-control" placeholder="Suffix">
+                </div>
+                <div class="form-group col-xl-4 col-sm-12 ">
+                    <label for="form-control">No. of characters(apart from Prefix & Suffix)</label>
+                    <input type="text" class="form-control" placeholder="No. of characters(apart from Prefix & Suffix)">
+                </div>
+                <div class="form-group col-xl-1 col-sm-12 ">
+                    <label for="form-control">Start No.</label>
+                    <input type="text" class="form-control"  placeholder="Start No.">
+                </div>
+                <div class="form-group col-xl-1 col-sm-12 ">
+                    <label for="form-control">Max. No.</label>
+                    <input type="text" class="form-control" placeholder="Max. No.">
+                </div>
+               
+                <div class="form-group col-xl-2 col-sm-12 ">
+                    <label for="form-control">Temp Module Type</label>
+                    <select class="form-control">
+                        <option>-Select-</option>
+                        
+                    </select>
+                </div>
+                 
+                <div class="form-group col-xl-2 col-sm-12 ">
+                    <label for="form-control">Cost Center</label>
+                    <select class="form-control">
+                        <option>-Select-</option>
+                        
+                    </select>
+                </div>
+                  
+                <div class="form-group col-xl-2 col-sm-12 ">
+                    <label for="form-control">Location</label>
+                    <select class="form-control">
+                        <option>-Select-</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group col-xl-2 col-sm-12 ">
+                    <label for="form-control">Unit</label>
+                    <select class="form-control">
+                        <option>-Select-</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group col-xl-2 col-sm-12 ">
+                    <label for="form-control">Salary Basic</label>
+                    <select class="form-control">
+                        <option>-Select-</option>
+                        
+                    </select>
+                </div>
+                
+              
+            </div>
+            <div class="d-flex  justify-content-end">
+                <button class="btn-save">Save</button>
+                <button class="btn-discard">Reset</button>
+            </div>
+           
+            <table class="table table-responsive  table-hover">
+                <thead>
+                    <tr>
+                        <th>Master Type</th>
+                        <th>Prefix</th>
+                        <th>No. of characters</th>
+                        <th>Start no.</th>
+                        <th>Max No.</th>
+                        <th>Cost center</th>
+                        <th>Location</th>
+                        <th>Unit</th>
+                        <th>Salary Basics</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Employee Master</td>
+                        <td>BSRD</td>
+                        <td>6</td>
+                        <td>10321</td>
+                        <td>10329</td>
+                        <td>Blue star</td>
+                        <td>All</td>
+                        <td>All</td>
+                        <td>All</td>
+                    </tr>
+                    <tr>
+                        <td>Employee Master</td>
+                        <td>BSRD</td>
+                        <td>6</td>
+                        <td>10321</td>
+                        <td>10329</td>
+                        <td>Blue star</td>
+                        <td>All</td>
+                        <td>All</td>
+                        <td>All</td>
+                    </tr>
+                    
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+   </div>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+   <script src="./assets/fontawesome-free-6.2.0-web/js/all.js"></script>
+   <script src="./assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+</body>
+</html>

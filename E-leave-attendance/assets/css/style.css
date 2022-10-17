@@ -5,11 +5,21 @@ html, body{
   font-size: 14px;
   font-family: 'Jost', sans-serif;
   margin: 0 !important;
-  padding: 0;
-  overflow-x: hidden;
+  padding: 0 !important;
+
 }
 p{
   font-size: 14px;
+}
+.title-asset{
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #333;
+  padding: 3px 10px;
+   background-color: #00416a;
+  color: #fff;
+  margin: 0 !important;
 }
 /* page 1 */
 EDIT ON
@@ -255,7 +265,7 @@ input #file-upload-btn{
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-* {margin:0;padding:0;border: 0 none;position: relative;}
+* {margin:0;padding:0;border: 0 none;position: relative; }
 [class="nv"]:before {font-family: 'fontawesome', sans-serif;}
 
 

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday and Emailer Configuration</title>
+     <!--assets-->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/assetstype.css">
+      <!---create update start-->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+ 
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.css">
+     <link rel="stylesheet" href="./assets/fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+<body>
+    <div id="bankDet">     
+        <section id="bdupdate">
+        <input type="radio" id="banum" value="1" name="tractor" checked='checked' />    
+        <input type="radio" id="Exbano" value="2" name="tractor" />      
+        <input type="radio" id="bmast" value="3" name="tractor" />
+        <input type="radio" id="brmast" value="4" name="tractor" />
+        <input type="radio" id="eximbranch" value="4" name="tractor" />
+        <p class="title-asset">Birthday and Emailer Configuration</p>
+          <nav  class="">  
+            
+          <label for="banum" class='nv nav1' checked='checked'>Salary Slip Message</label>
+          <label for="Exbano" class='nv nav2'>Publish Birthday etc. Message</label>
+           <label for="bmast" class='nv nav3'>Misc. Setting for ESS</label>
+          <label for="brmast" class='nv nav4'>Imp. footer message on payslips</label>
+          <!-- <label for="eximbranch" class='nv nav5'>Export Import Branch</label> -->
+          </nav>
+          
+          <article class=' nv c1 nav1' id="formBE">
+            <div class=" d-flex justify-content-center">
+                <div class="container ">
+                    <p class="title-asset">Salary Slip Message</p>
+                    <div class="page2-heading my-2">Filter & Search Window</div>
+                    <div  id="BnR" class="my-3">
+                        <h6 class="py-2"><b class="">Attention:</b></h6>
+                        <h6><b>A. Salary Slip Message</b></h6>
+                        <ol>
+                          <p><b>Assign type-</b></p>
+                            <li>For all employees</li>
+                            <li>For selected employees</li>
+                        </ol>
+                        <p><b>1. For all employees: </b>
+                        If you want to save message then click on "Configure Salary Slip Message Content[Max. 500 characters]". 
+                        <br/>Enter message and Save/Update it. 
+                     </p>
+                     <p><b>2. For selected employees: </b>
+                        If you want to enter message for someone particular employee(s) then search records.
+                        Click on "Configure Salary Slip Message Content [Max. 500 characters]"   
+                         <br/>Enter message and Save/Update it. 
+                     </p>
+
+                     <h6 class="my-2"><b>B. Export-Import Salary Slip Message</b></h6>
+                     <div class="">
+                        <p>
+                            1. If you want to export the blank sheet then click on "Please download the excel import file format." <br/>
+                            2. Search the records & export it. <br/>
+                            3. In excel sheet SalSlipMag= "Entry done without using import-export method" means 
+                             you have saved through 1st option(Salary Slip Message).<br/>
+                             4. A8 & when you changed data then excel sheet columns message would be considered 
+                             otherwise previous message will be considered which is saved through 1st option 
+                             (Salary Slip Message).<br/>
+                               
+                         </p>
+                      <p><b>C.</b> Maximum 500 characters will be considered for salary slip message</p>
+                      <p><b>D. Continue for future month:</b> If you want to publish same message in future then check 
+                      this field otherwise don't check it. </p>
+                     </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-xl-2 col-sm-12">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Salary Slip Message</label>
+                              </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-12">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Export-Import Salary Slip Message</label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-xl-2 col-sm-12">
+                            <label for="form-control">Month-Year</label>
+                            <select class="form-control">
+                                <option>Oct-2022</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-xl-2 col-sm-12">
+                            <label for="form-control">Assign-type</label>
+                            <select class="form-control">
+                                <option>For all employees</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-xl-2 col-sm-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Active</label>
+                              </div>  
+                        </div>
+                        <div class="col-xl-3 col-sm-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Continue for future month </label>
+                              </div>  
+                        </div>
+                    </div>
+
+                    <div class="d-flex  justify-content-end ">
+                        <button class="btn-save">Save</button>
+                        <button class="btn-discard">Reset</button>
+                    </div>
+
+                </div>
+            </div>
+          
+          </article>
+          
+          <article class='c2 nv nav2 ' id="formBE">
+            <div class=" d-flex justify-content-center ">
+                <div class="container ">
+                    <p class="title-asset">Publish Birthday etc. message</p>
+
+                    <div  id="BnR" class="my-3">
+                        <h6 class="py-2"><b class="">Attention:</b></h6>
+                     <div class="">
+                        <p>
+                          Publish Birthday, anniversary etc. message on ESS dashboard and send auto mail.
+                          For each auto mail send feature select different time. If you select same time then only
+                          one auto mail send would work. Auto mail works only when scheduler is installed on ther server.
+                         </p>
+                      
+                     </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-xl-4 col-sm-12 form-group">
+                           <label for="form-control">Select publish message type</label>
+                            <select class="form-control">
+                                <option>Oct-2022</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-xl-4 col-sm-12">
+                            <div class="form-group">
+                                <label class="form-check-label" for="exampleCheck1">Message Subject[Max. 100 characters]</label>
+                                <input type="text" class="form-control" placeholder="Message Subject">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-xl-4 col-sm-12">
+                            <div class="form-group">
+                                <label class="form-check-label" for="exampleCheck1">Message Element</label>
+                                <textarea class="form-control" placeholder="Message Element" id="floatingTextarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-12">
+                            <div class="form-group">
+                                <label class="form-check-label" for="exampleCheck1">Reset Message Element</label>
+                                <textarea class="form-control" placeholder="Reset Message Element" id="floatingTextarea"></textarea>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-xl-4 col-sm-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Show to all employees</label>
+        
+                            </div>  
+                        </div>
+                        <div class="col-xl-4 col-sm-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Do you want to configure auto mail feature</label>
+        
+                            </div>  
+                        </div>
+                      
+                    </div>
+
+                    <div class="d-flex  justify-content-end">
+                        <button class="btn-save">Update</button>
+                        <button class="btn-discard">Reset</button>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Select employee(s) whose anniversary message should not be dispalyed. </label>
+
+                    </div>
+                </div>
+            </div>
+          </article>
+          
+          <article class='c3 nv nav3' id="formBE">
+            <div class=" d-flex justify-content-center ">
+                <div class="container ">
+                    <p class="title-asset">Misscellaneous Setting for ESS</p>
+
+                 
+                  <div class="row">
+                    <div class="col-xl-6">
+                        <div class="d-flex flex-wrap justify-content-start my-2" id="rns">
+                            <div class="form-check " id="check1">
+                              
+                                <label><input id="rdb1" type="radio" name="toggler" value="1" /> Select Theme</label>
+                               </div>
+                      
+                            <div class="form-check " id="check2">
+                            
+                             <label><input id="rdb2" type="radio" name="toggler" value="2" /> Dashboard widget </label>
+                           </div>
+                           <div class="form-check " id="check3">
+                            
+                            <label><input id="rdb3" type="radio" name="toggler" value="3" /> Special Occassion </label>
+                          </div>
+                        </div>
+                  </div>
+                  
+               
+                </div>
+                <div class="">
+                    <div id="blk-1" class="toHide" style="display:none">
+                      <div class="row m-2">
+                        <div class="col-xl-3 col-sm-12">
+                            <div class="form-group  ">
+                                <label for="form-control">Select user group </label>
+                                <select class="form-control">
+                                    <option value="">Select user group</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-sm-12">
+                          <div><h6>Select Theme</h6></div>
+                          <div class="d-flex justify-content-between flex-wrap themes">
+                            <div class="theme1 m-2">
+                                <div class="mb-0 form-check px-4 ">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                    <label class="form-check-label" for="exampleCheck1">Blue</label>
+                                </div>
+                            </div>
+                            <div class="theme2 m-2">
+                                <div class="mb-0 form-check px-4 ">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                    <label class="form-check-label" for="exampleCheck1">Turquoise</label>
+                                </div>
+                            </div>
+                            <div class="theme3 m-2">
+                                <div class="mb-0 form-check  px-4 ">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                    <label class="form-check-label" for="exampleCheck1">Orange</label>
+                                </div>
+                            </div>
+                            <div class="theme4 m-2">
+                                <div class="mb-0 form-check  px-4 ">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                    <label class="form-check-label" for="exampleCheck1">Green</label>
+                                </div>
+                            </div>
+                            <div class="theme5 m-2">
+                                <div class="mb-0 form-check px-4">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                    <label class="form-check-label" for="exampleCheck1">Purple</label>
+                                </div>
+                            </div>
+                            <div class="theme6 m-2">
+                                <div class="mb-0 form-check  px-4 ">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                    <label class="form-check-label" for="exampleCheck1">Grey</label>
+                                </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+
+                      </div>
+                      <div class="d-flex  justify-content-end">
+                        <button class="btn-save">Save</button>
+                        <button class="btn-discard">Reset</button>
+                    </div>
+                    </div>
+                    <div id="blk-2" class="toHide" style="display:none">
+                        <div class="row m-2">
+                            <div class="col-xl-3 col-sm-12">
+                                <div class="form-group  ">
+                                    <label for="form-control">Select user group </label>
+                                    <select class="form-control">
+                                        <option value="">Select user group</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-9 col-sm-12">
+                              <div><h6 class="px-2">Select Widget</h6></div>
+                              <div class="d-flex justify-content-start flex-wrap">
+                                <div class=" m-2">
+                                    <div class="mb-0 form-check px-4 ">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                        <label class="form-check-label" for="exampleCheck1">Pending Task</label>
+                                    </div>
+                                </div>
+                                <div class="theme2 m-2">
+                                    <div class="mb-0 form-check px-4 ">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                        <label class="form-check-label" for="exampleCheck1">To do list</label>
+                                    </div>
+                                </div>
+                                <div class="theme3 m-2">
+                                    <div class="mb-0 form-check  px-4 ">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                        <label class="form-check-label" for="exampleCheck1">Grievance report</label>
+                                    </div>
+                                </div>
+                              
+                               
+                              </div>
+                              
+                            </div>
+    
+                          </div>
+                          <div class="d-flex  justify-content-end">
+                            <button class="btn-save">Save</button>
+                            <button class="btn-discard">Reset</button>
+                        </div>
+                    </div>
+                    <div id="blk-3" class="toHide" style="display:none">
+                        <div class="row m-2">
+                            <div class="col-xl-3 col-sm-12">
+                               <div class="form-group">
+                                   <label class="form-check-label" for="exampleCheck1">Image Title</label>
+                                   <input type="text" class="form-control" placeholder="Image Title">
+                               </div>
+               
+                            </div>
+                            <div class="col-xl-3 col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-check-label" for="exampleCheck1">Image Caption</label>
+                                    <input type="text" class="form-control" placeholder="Image Caption">
+                                </div>
+                
+                             </div>
+                             <div class="col-xl-2 col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-check-label" for="exampleCheck1">Http Link</label>
+                                    <input type="text" class="form-control" placeholder="Http Link">
+                                </div>
+                
+                             </div>
+                             <div class="col-xl-2 col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-check-label" for="exampleCheck1">From Date</label>
+                                    <input type="date" class="form-control" placeholder="From Date">
+                                </div>
+                            </div>
+                             <div class="col-xl-2 col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-check-label" for="exampleCheck1">To Date</label>
+                                    <input type="date" class="form-control" placeholder="To Date">
+                                </div>
+                             </div>
+                             <div class="col-xl-3 col-sm-12">
+                                <div class="mb-0 form-check px-4">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                    <label class="form-check-label" for="exampleCheck1">Active</label>
+                                </div>
+                             </div>
+                             <div class="col-xl-3 col-sm-12">
+                                <div class="form-group">
+                                    <label class="form-check-label" for="exampleCheck1">Image display order</label>
+                                    <input type="text" class="form-control" placeholder="Image display orde">
+                                </div>
+                
+                             </div>
+                             <div class="col-xl-6">
+                                <div class="form-group">
+                                    <label class="form-check-label" for="exampleCheck1">Select User group</label>
+                                    <textarea class="form-control" placeholder="Select User group" id="floatingTextarea"></textarea>
+                                </div>
+                              
+                             </div>
+                             <div class="col-xl-6">
+                                <div class="">
+                                   <div class="row">
+                                        <div class="col-lg-6 ">
+                                
+                                            <!-- Upload image input-->
+                                            <div class="input-group">
+                                                <div class="input-group-append my-2 px-4 pt-2 btn-light rounded-pill">
+                                                    <label for="upload" class=" px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                                                </div>
+                                                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                                                <label id="upload-label" for="upload" class="my-2 mx-2 font-weight-light text-muted">Choose file</label>
+                                                
+                                            </div>
+                                
+                                        </div>
+                                        <div class="col-lg-6">
+                                             <!-- Uploaded image area-->
+                                         <div class="image-area "><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm  d-block"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!--image upload-->
+                             </div>
+                             <div class="col-xl-6">
+                                <div class="d-flex  justify-content-end">
+                                    <button class="btn-save">Save</button>
+                                    <button class="btn-discard">Reset</button>
+                                </div>
+                             </div>
+                           </div>
+                    </div>
+                  </div>
+            </div>
+          </article>
+           
+          <article class='c4 nv nav4 ' id="formBE">
+            <div class="my-2 mx-2">
+                <p class="title-asset">Import footer message on payslips for aviation sector</p>
+            </div>
+            <div  id="BnR" class="my-3 mx-2">
+                <h6 class="py-2"><b class="">Attention:</b></h6>
+             <div class="">
+                <ol>
+                    <li>If exisiting records exists then that data would be exported otherwise blank
+                        sheet would be exported.
+                    </li>
+                    <li>Please export -import data before salary process for publish data on "Salary Slip with Tax & Misscellaneous Details"
+                    </li>
+                    <li>E.g. what you can import:</li>
+                    <li>
+                        Salary process for the Month-Year
+                    </li>   
+                    <li>Output on payslip</li>
+                </ol>
+              
+             </div>
+             <div class="page2-heading my-2">Filter & Search Window</div>
+             <div class="row m-2">
+                <div class="col-xl-2 col-sm-12">
+                    <label for="form-control">Month-Year</label>
+                    <select class="form-control">
+                        <option>Oct-2022</option>
+                        
+                    </select>
+                </div>
+                <div class="col-xl-4 col-sm-12 d-flex align-items-end" >
+                    <p class="text-success"><b>Export to excel</b> <span><img src="./assets/img/icons8-export-excel-48.png" alt=""></span></p>
+                </div>
+             </div>
+             <div class="row m-2">
+                <div class="col-xl-3 col-sm-12">
+                  
+                    <div class="form-group px-1">
+                        <label class="form-label" for="customFile">Select Excel file to import</label>
+                        <input type="file" class="form-control" id="customFile" />
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-12 d-flex align-items-end mb-1">
+                    <div class="">
+                        <button class="btn-save">Import & Save</button>
+                    </div>
+                  
+                </div>
+             </div>
+            </div>
+          </article>
+
+          <!-- <article class='c5 nv nav5 ' id="formBE">
+          </article> -->
+        </section>
+    </div>
+  
+  
+<script>
+    $(function() {
+    $("[name=toggler]").click(function(){
+            $('.toHide').hide();
+            $("#blk-"+$(this).val()).show('slow');
+    });
+ });
+
+
+ 
+/*  ==========================================
+    SHOW UPLOADED IMAGE
+* ========================================== */
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#imageResult')
+                .attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$(function () {
+    $('#upload').on('change', function () {
+        readURL(input);
+    });
+});
+
+/*  ==========================================
+    SHOW UPLOADED IMAGE NAME
+* ========================================== */
+var input = document.getElementById( 'upload' );
+var infoArea = document.getElementById( 'upload-label' );
+
+input.addEventListener( 'change', showFileName );
+function showFileName( event ) {
+  var input = event.srcElement;
+  var fileName = input.files[0].name;
+  infoArea.textContent = 'File name: ' + fileName;
+}
+</script>
+         <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+     
+        <script src="./assets/fontawesome-free-6.2.0-web/js/all.js"></script>
+        <script src="./assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+</body>
+</html>

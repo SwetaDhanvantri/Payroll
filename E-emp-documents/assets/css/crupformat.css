@@ -75,7 +75,8 @@
     font-size: 14px;
     margin-left: 20px;
   }
-  #key-head p{
-   
-  }
+ #crupdate .table{
+  overflow-x: scroll !important;
+ }
+
   /*crup letter format end*/
