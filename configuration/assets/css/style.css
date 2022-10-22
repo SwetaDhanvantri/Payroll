@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans:wght@300&family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Lato:wght@300&family=Open+Sans:wght@300&family=Source+Sans+Pro&display=swap');
 
-body{
+html, body{
   font-size: 14px;
   font-family: 'Jost', sans-serif;
 }
@@ -601,6 +601,7 @@ a:hover {color: rgba(0,0,0,.2)}
 }
 .record-found{
   color: #00416a;
+  font-weight: 500;
 }
 .c2-body{
   padding: 10px;

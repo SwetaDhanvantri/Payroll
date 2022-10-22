@@ -222,3 +222,32 @@
   #project-body input{
     display: block;
   }
+    .check-box{
+      margin: 10px 0;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    #project-body .form-control{
+      padding: 3px;
+      font-size: 14px;
+    }
+    #project-body .form-group{
+    margin: 5px 0;
+
+    }
+    #project-body label{
+      font-size: 14px;
+    box-shadow: none;
+    margin-bottom: 4px;
+    padding: 0 !important;
+    text-align: left;
+  }
+  .header-table{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 4px;
+  }
+  .gen-ID{
+    color: #00A36C;
+    font-weight: 500;
+  }

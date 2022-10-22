@@ -20,7 +20,7 @@
 </head>
 <body>
     <div id="projectMaster">     
-        <section id="projectM" class="projectm">
+        <section id="projectM" class="projectm ">
         <input type="radio" id="navitem1" value="1" name="tractor" checked='checked' />    
         <input type="radio" id="navitem2" value="2" name="tractor" />      
         <input type="radio" id="navitem3" value="3" name="tractor" />
@@ -44,7 +44,8 @@
                 <div class="my-2 mx-2">
                     <p class="title-asset">List of cost center details</p>
                 </div>
-            <table class="table  table-hover table-responsive-sm">
+          <div class="m-2 header-table">
+            <table class="table  table-hover table-responsive-sm table-responsive-md">
              <thead>
                 <tr>
                     <th>Code</th>
@@ -94,329 +95,481 @@
                 </tr>
              </tbody>
             </table>
-
+        </div>
             <div class="row p-2">
-                <div class="col-xl-2 col-sm-12 form-group">
+                <div class="col-xl-2 col-md-4 col-sm-6 form-group">
                     <label for="form-control">Cost Center</label>
                     <input type="text" class="form-control" placeholder="Code">
                 </div>
-                <div class="col-xl-2 col-sm-12 form-group">
+                <div class="col-xl-2 col-md-4 col-sm-6 form-group">
                     <label for="form-control">Description</label>
                     <input type="text" class="form-control" placeholder="Description">
                 </div>
-                <div class="col-xl-4 col-sm-12 form-group">
+                <div class="col-xl-4 col-md-4 col-sm-6 form-group">
                     <label for="form-control">Address</label>
                     <input type="text" class="form-control" placeholder="Address">
                 </div>
-                <div class="col-xl-4 col-sm-12 form-group">
-                    <div class="form-group px-1">
-                        <label class="form-label" for="customFile">Select Excel file to import</label>
+                <div class="col-xl-4 col-md-4 col-sm-6 form-group">
+                    <div class="form-group ">
+                        <label class="form-label" for="customFile">Upload Logo File</label>
                         <input type="file" class="form-control" id="customFile" />
                     </div>
                 </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 form-group">
+                    <label for="form-control">Concern Person Name</label>
+                    <input type="text" class="form-control" placeholder="Concern Person Name">
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 form-group">
+                    <label for="form-control">Email</label>
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 form-group">
+                    <label for="form-control">Phone No.</label>
+                    <input type="tel" class="form-control" placeholder="Phone No.">
+                </div>
+                <div class="col-xl-2 col-md-4  col-sm-6 form-group">
+                    <label for="form-control">TIN No. or MSME</label>
+                    <input type="text" class="form-control" placeholder="TIN No. or MSME">
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 form-group">
+                    <label for="form-control">TAN No. or PAN</label>
+                    <input type="text" class="form-control" placeholder="TAN No. or PAN">
+                </div>
+                <div class="col-xl-2 col-md-4  col-sm-6 form-group">
+                    <label for="form-control">GSTN</label>
+                    <input type="text" class="form-control" placeholder="GSTN">
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 form-group">
+                    <label for="form-control">Agreement Start Date</label>
+                    <input type="date" class="form-control" placeholder="Agreement Start Date">
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 form-group">
+                    <label for="form-control">Agreement End Date</label>
+                    <input type="date" class="form-control" placeholder="Agreement End Date">
+                </div>
+                <div class="col-xl-2 col-md-4  col-sm-6 form-group">
+                    <label for="form-control">Bank</label>
+                    <select class="form-control">
+                        <option value="">Select Bank Name</option>
+                    </select>
+                </div>
+                <div class="col-xl-2 col-md-4  col-sm-6 form-group">
+                    <label for="form-control">Branch</label>
+                    <select class="form-control">
+                        <option value="">Select Branch</option>
+                    </select>
+                </div>
+                 <div class="col-xl-2 col-md-4  col-sm-6 form-group">
+                    <label for="form-control">Account No.</label>
+                    <input type="text" class="form-control" placeholder="Account No.">
+                </div>
+                <div class="col-xl-2 col-sm-6 col-md-4  form-group">
+                    <label for="form-control">Entity</label>
+                    <input type="text" class="form-control" placeholder="Entity">
+                </div>
+                <div class="col-xl-2 col-sm-6 col-md-4  form-group">
+                    <label for="form-control">Active</label>
+                    <select class="form-control">
+                        <option value="">Yes</option>
+                        <option value="">No</option>
+                    </select>
+                  
+                </div>
+                <div class="col-xl-2 col-md-4 col-sm-6 form-group">
+                    <div class="form-group px-1">
+                        <label class="form-label" for="customFile">Upload Agreement</label>
+                        <input type="file" class="form-control" id="customFile" />
+                        <p>Document extension type: jpg, jpeg, doc, xlx,
+                            xlxs, pdf, zip, rar
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-md-12  col-sm-12 form-group">
+                    <label class="form-label" for="customFile">Map with cost center</label>
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Department</label>
+                        </div> 
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Designation</label>
+                        </div>  
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Location</label>
+                        </div>  
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Grade</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Level</label>
+                        </div>   
+                    </div>
+                    <div class="check-box">
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <div class="form-check col-xl-3 col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">CPPD WPD GT</label>
+                            </div> 
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">CPPD(RAD)</label>
+                            </div>  
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">D024</label>
+                            </div>  
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">DAIKIN DSP</label>
+                            </div>
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">DAIKIN GN</label>
+                            </div>
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">General trade</label>
+                            </div>  
+                            
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Human Resource</label>
+                            </div> 
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">DSP</label>
+                            </div>
+                            <div class="form-check  col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">IT</label>
+                            </div>
+                            <div class="form-check  col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Finance</label>
+                            </div> 
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Office Assistant</label>
+                            </div> 
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Office Boy</label>
+                            </div>   
+                            
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Operations</label>
+                            </div>  
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">RAD</label>
+                            </div>
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">RPD</label>
+                            </div> 
+                            <div class="form-check col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Sales</label>
+                            </div> 
+                            <div class="form-check  col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Sales & promotion</label>
+                            </div>   
+                            <div class="form-check   col-xl-3  col-md-3 col-sm-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">WPD</label>
+                            </div>  
+                             
+                        </div>
+                    </div>
+
+                </div>
+               
             </div>
+            <div class="d-flex  justify-content-end p-2">
+                <button class="btn-save">Save</button>
+                <button class="btn-discard">Reset</button>
+            </div>
+            <p class="record-found p-2">Total records:5</p>
           </article>
           
           <article class='c2 nv nav2 ' id="project-body">
-            <div class=" d-flex justify-content-center ">
-                <div class="container ">
-                    <p class="title-asset">Publish Birthday etc. message</p>
+         
+                <div class="p-2">
+                    <div> <p class="title-asset">Contract Details</p></div>
+                   
 
-                    <div  id="BnR" class="my-3">
-                        <h6 class="py-2"><b class="">Attention:</b></h6>
-                     <div class="">
-                        <p>
-                          Publish Birthday, anniversary etc. message on ESS dashboard and send auto mail.
-                          For each auto mail send feature select different time. If you select same time then only
-                          one auto mail send would work. Auto mail works only when scheduler is installed on ther server.
-                         </p>
-                      
-                     </div>
-
-                    </div>
-                    <div class="row my-2">
-                        <div class="col-xl-4 col-sm-12 form-group">
-                           <label for="form-control">Select publish message type</label>
+                  
+                    <div class="row py-2">
+                        <div class="col-xl-4 col-md-4 col-sm-4 ">
+                          
                             <select class="form-control">
-                                <option>Oct-2022</option>
+                                <option>-Select Project-</option>
                                 
                             </select>
                         </div>
-                        <div class="col-xl-4 col-sm-12">
-                            <div class="form-group">
-                                <label class="form-check-label" for="exampleCheck1">Message Subject[Max. 100 characters]</label>
-                                <input type="text" class="form-control" placeholder="Message Subject">
-                            </div>
+                        <div class="col-xl-4 col-md-4 col-sm-4">
+                            <select class="form-control">
+                                <option>-Select-</option>
+                                
+                            </select>
                         </div>
                         
-                       
+                        <div class="col-xl-4 col-md-4 col-sm-4">
+                            <select class="form-control">
+                                <option>-Select Designation-</option>
+                                
+                            </select>
+                        </div>
+                        
                     </div>
-                    <div class="row my-2">
-                        <div class="col-xl-4 col-sm-12">
-                            <div class="form-group">
-                                <label class="form-check-label" for="exampleCheck1">Message Element</label>
-                                <textarea class="form-control" placeholder="Message Element" id="floatingTextarea"></textarea>
-                            </div>
+                    <div class="my-2"> <p class="title-asset">Contract Details List</p></div>
+                    <table class="table table-responsive table-hover">
+                        <thead>
+                            <tr>
+                                <th>Position_Id</th>
+                                <th>Designation</th>
+                                <th>Total_MM</th>
+                                <th>Type</th>
+                                <th>Emp_Code</th>
+                                <th>Recruiter</th>
+                                <th>Status</th>
+                                <th>Coordinator_Name</th>
+                                <th>Position_Type</th>
+                                <th>Const_MM</th>
+                                <th>Main_MM</th>
+                                <th>Const_EOT_MM</th>
+                                <th>Main_EOT_MM</th>
+                                <th>MOB_Date</th>
+                                <th>Target_Date</th>
+                            </tr>
+                        </thead>
+                    </table>
+
+                    
+                    <p class="record-found p-2">Total records:5</p>
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 col-sm-4 py-1">
+                            <div class="form-group px-1">
+                                <label class="form-label" for="customFile">Select file</label>
+                                <input type="file" class="form-control" id="customFile" />
+                             </div>
                         </div>
-                        <div class="col-xl-4 col-sm-12">
-                            <div class="form-group">
-                                <label class="form-check-label" for="exampleCheck1">Reset Message Element</label>
-                                <textarea class="form-control" placeholder="Reset Message Element" id="floatingTextarea"></textarea>
-                            </div>
+                        <div class="col-xl-4  col-md-8 col-sm-8 d-flex align-items-end">
+                            
+                                <button class="btn-save">Import & Save</button>
+                                <button class="btn-discard">Export in excel</button>
+                            
                         </div>
-                       
                     </div>
-                    <div class="row my-2">
-                        <div class="col-xl-4 col-sm-12">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Show to all employees</label>
-        
-                            </div>  
+                   
+                </div>
+                <div class="row p-2">
+                    <div class="col-xl-2 col-md-4 col-sm-6 ">
+                        <div class="form-group">
+                            <label for="form-control">Position_Id</label>
+                            <input type="text" class="form-control" placeholder="Position_Id">
                         </div>
-                        <div class="col-xl-4 col-sm-12">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Do you want to configure auto mail feature</label>
-        
-                            </div>  
-                        </div>
+                      <p class="gen-ID px-1"><a href="">Generate New ID?</a> </p>
+            
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <label for="form-control">Position Type</label>
+                        <select class="form-control">
+                            <option value="">Sole</option>
+                        </select>
                       
                     </div>
-
-                    <div class="d-flex  justify-content-end">
-                        <button class="btn-save">Update</button>
-                        <button class="btn-discard">Reset</button>
+                    <div class="col-xl-2 col-md-4 col-sm-6 ">
+                        <label for="form-control">Designation</label>
+                        <select class="form-control">
+                            <option value="">-Select</option>
+                        </select>
+                      
                     </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Select employee(s) whose anniversary message should not be dispalyed. </label>
+                    <div class="col-xl-2  col-md-4 col-sm-6">
+                        <label for="form-control">Position Status</label>
+                        <select class="form-control">
+                            <option value="">-Select</option>
+                        </select>
+                      
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <label for="form-control">Position Type</label>
+                        <input type="text" class="form-control" placeholder="Position Type">
+                    </div>
+                    <div class="col-xl-2  col-md-4 col-sm-6">
+                        <label for="form-control">Display Order</label>
+                        <input type="text" class="form-control" placeholder="Display Order">
+                    </div>
+                    <div class="col-xl-2  col-md-4 col-sm-6">
+                        <label for="form-control">Coordinator</label>
+                        <select class="form-control">
+                            <option value="">-Select</option>
+                        </select>
+                      
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <label for="form-control">Recruiter</label>
+                        <select class="form-control">
+                            <option value="">-Select</option>
+                        </select>
+                      
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <label for="form-control">MOB Date</label>
+                        <input type="date" class="form-control" placeholder="MOB_Date">
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <label for="form-control">Target Days</label>
+                        <input type="text" class="form-control" placeholder="Target Days">
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <label for="form-control">Target Date</label>
+                        <input type="date" class="form-control" placeholder="Target Date">
+                    </div>
+                   
+                   <div class="col-xl-2 col-md-4 col-sm-6">
+                        <label for="form-control">Remarks</label>
+                        <input type="text" class="form-control" placeholder="Remarks">
+                    </div>
+                    
+                    
+              
+                  
+                    
+                    
+                </div>
+                <div class="row p-2 my-2">
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="form-group">
+                            <label for="form-control">Cost MM</label>
+                            <input type="text" class="form-control" placeholder="Cost MM">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-control">Const_EOT_MM</label>
+                            <input type="text" class="form-control" placeholder="Const_EOT_MM">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-control">No. of Qty</label>
+                            <input type="text" class="form-control" placeholder="No. of Qty">
+                        </div>
+
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="form-group">
+                            <label for="form-control">Main MM</label>
+                            <input type="text" class="form-control" placeholder="Main MM">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-control">Main_EOT_MM</label>
+                            <input type="text" class="form-control" placeholder="Main_EOT_MM">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-control">Total MM</label>
+                            <input type="text" class="form-control" placeholder="Total MM">
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class=" form-group">
+                            <label for="form-control">Working Rate</label>
+                            <input type="text" class="form-control" placeholder="Working Rate">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-control">Contract Rate</label>
+                            <input type="text" class="form-control" placeholder="Contract Rate">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-control">REV Contract Amt</label>
+                            <input type="text" class="form-control" placeholder="REV Contract Amount">
+                        </div>
+
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="form-group ">
+                            <label for="form-control">Working Amt.</label>
+                            <input type="text" class="form-control" placeholder="Working Amount">
+                        </div>
+                             
+                        <div class="form-group  ">
+                            <label for="form-control">Contract Amt.</label>
+                            <input type="text" class="form-control" placeholder="Contract Amount">
+                        </div>
+                        <div class="form-group ">
+                            <label for="form-control">REV Contract Rate</label>
+                            <input type="text" class="form-control" placeholder="REV Contract Rate">
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4 col-md-8 col-sm-8 d-flex flex-row ">
+                        <div>
+                            <div class=" form-group col-xl-12 ">
+                                <label for="form-control">Name for billing</label>
+                                <input type="text" class="form-control" placeholder="Name for billing">
+                            </div>
+                            
+                            <div class="form-group col-xl-12 ">
+                                <label for="form-control">Pending Since</label>
+                                <input type="text" class="form-control" placeholder="Pending Since">
+                            </div>
+                            <div class="form-group col-xl-12">
+                                <label for="form-control">Billed Qty Total</label>
+                                <input type="text" class="form-control" placeholder="Billed Qty Total">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-group col-xl-12">
+                                <label for="form-control">Billed Qty Month</label>
+                                <input type="text" class="form-control" placeholder="Billed Qty Total">
+                            </div>
+                            <div class="form-group col-xl-12">
+                                <label for="form-control">ESC</label>
+                                <input type="text" class="form-control" placeholder="ESC">
+                            </div>
+                        </div>
+                       
+                    
 
                     </div>
                 </div>
-            </div>
+                <div class="d-flex  justify-content-end p-2">
+                    <button class="btn-save">Save</button>
+                    <button class="btn-discard">Reset</button>
+                </div>
           </article>
           
           <article class='c3 nv nav3' id="project-body">
-            <div class=" d-flex justify-content-center ">
-                <div class="container ">
-                    <p class="title-asset">Misscellaneous Setting for ESS</p>
-
-                 
-                  <div class="row">
-                    <div class="col-xl-6">
-                        <div class="d-flex flex-wrap justify-content-start my-2" id="rns">
-                            <div class="form-check " id="check1">
-                              
-                                <label><input id="rdb1" type="radio" name="toggler" value="1" /> Select Theme</label>
-                               </div>
-                      
-                            <div class="form-check " id="check2">
-                            
-                             <label><input id="rdb2" type="radio" name="toggler" value="2" /> Dashboard widget </label>
-                           </div>
-                           <div class="form-check " id="check3">
-                            
-                            <label><input id="rdb3" type="radio" name="toggler" value="3" /> Special Occassion </label>
-                          </div>
-                        </div>
-                  </div>
-                  
-               
+                <div class="m-2">
+                    <p class="title-asset">Project Header</p>
+               </div>
+               <div class="row">
+                <div class="col-xl-4 col-sm-12 form-group">
+                    <div class="form-group px-1">
+                        <label class="form-label" for="customFile">Select file</label>
+                        <input type="file" class="form-control" id="customFile" />
+                     </div>
                 </div>
-                <div class="">
-                    <div id="blk-1" class="toHide" style="display:none">
-                      <div class="row m-2">
-                        <div class="col-xl-3 col-sm-12">
-                            <div class="form-group  ">
-                                <label for="form-control">Select user group </label>
-                                <select class="form-control">
-                                    <option value="">Select user group</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xl-9 col-sm-12">
-                          <div><h6>Select Theme</h6></div>
-                          <div class="d-flex justify-content-between flex-wrap themes">
-                            <div class="theme1 m-2">
-                                <div class="mb-0 form-check px-4 ">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
-                                    <label class="form-check-label" for="exampleCheck1">Blue</label>
-                                </div>
-                            </div>
-                            <div class="theme2 m-2">
-                                <div class="mb-0 form-check px-4 ">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
-                                    <label class="form-check-label" for="exampleCheck1">Turquoise</label>
-                                </div>
-                            </div>
-                            <div class="theme3 m-2">
-                                <div class="mb-0 form-check  px-4 ">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
-                                    <label class="form-check-label" for="exampleCheck1">Orange</label>
-                                </div>
-                            </div>
-                            <div class="theme4 m-2">
-                                <div class="mb-0 form-check  px-4 ">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
-                                    <label class="form-check-label" for="exampleCheck1">Green</label>
-                                </div>
-                            </div>
-                            <div class="theme5 m-2">
-                                <div class="mb-0 form-check px-4">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
-                                    <label class="form-check-label" for="exampleCheck1">Purple</label>
-                                </div>
-                            </div>
-                            <div class="theme6 m-2">
-                                <div class="mb-0 form-check  px-4 ">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
-                                    <label class="form-check-label" for="exampleCheck1">Grey</label>
-                                </div>
-                            </div>
-                          </div>
-                          
-                        </div>
-
-                      </div>
-                      <div class="d-flex  justify-content-end">
-                        <button class="btn-save">Save</button>
-                        <button class="btn-discard">Reset</button>
-                    </div>
-                    </div>
-                    <div id="blk-2" class="toHide" style="display:none">
-                        <div class="row m-2">
-                            <div class="col-xl-3 col-sm-12">
-                                <div class="form-group  ">
-                                    <label for="form-control">Select user group </label>
-                                    <select class="form-control">
-                                        <option value="">Select user group</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-xl-9 col-sm-12">
-                              <div><h6 class="px-2">Select Widget</h6></div>
-                              <div class="d-flex justify-content-start flex-wrap">
-                                <div class=" m-2">
-                                    <div class="mb-0 form-check px-4 ">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
-                                        <label class="form-check-label" for="exampleCheck1">Pending Task</label>
-                                    </div>
-                                </div>
-                                <div class="theme2 m-2">
-                                    <div class="mb-0 form-check px-4 ">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
-                                        <label class="form-check-label" for="exampleCheck1">To do list</label>
-                                    </div>
-                                </div>
-                                <div class="theme3 m-2">
-                                    <div class="mb-0 form-check  px-4 ">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
-                                        <label class="form-check-label" for="exampleCheck1">Grievance report</label>
-                                    </div>
-                                </div>
-                              
-                               
-                              </div>
-                              
-                            </div>
-    
-                          </div>
-                          <div class="d-flex  justify-content-end">
-                            <button class="btn-save">Save</button>
-                            <button class="btn-discard">Reset</button>
-                        </div>
-                    </div>
-                    <div id="blk-3" class="toHide" style="display:none">
-                        <div class="row m-2">
-                            <div class="col-xl-3 col-sm-12">
-                               <div class="form-group">
-                                   <label class="form-check-label" for="exampleCheck1">Image Title</label>
-                                   <input type="text" class="form-control" placeholder="Image Title">
-                               </div>
-               
-                            </div>
-                            <div class="col-xl-3 col-sm-12">
-                                <div class="form-group">
-                                    <label class="form-check-label" for="exampleCheck1">Image Caption</label>
-                                    <input type="text" class="form-control" placeholder="Image Caption">
-                                </div>
-                
-                             </div>
-                             <div class="col-xl-2 col-sm-12">
-                                <div class="form-group">
-                                    <label class="form-check-label" for="exampleCheck1">Http Link</label>
-                                    <input type="text" class="form-control" placeholder="Http Link">
-                                </div>
-                
-                             </div>
-                             <div class="col-xl-2 col-sm-12">
-                                <div class="form-group">
-                                    <label class="form-check-label" for="exampleCheck1">From Date</label>
-                                    <input type="date" class="form-control" placeholder="From Date">
-                                </div>
-                            </div>
-                             <div class="col-xl-2 col-sm-12">
-                                <div class="form-group">
-                                    <label class="form-check-label" for="exampleCheck1">To Date</label>
-                                    <input type="date" class="form-control" placeholder="To Date">
-                                </div>
-                             </div>
-                             <div class="col-xl-3 col-sm-12">
-                                <div class="mb-0 form-check px-4">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" >
-                                    <label class="form-check-label" for="exampleCheck1">Active</label>
-                                </div>
-                             </div>
-                             <div class="col-xl-3 col-sm-12">
-                                <div class="form-group">
-                                    <label class="form-check-label" for="exampleCheck1">Image display order</label>
-                                    <input type="text" class="form-control" placeholder="Image display orde">
-                                </div>
-                
-                             </div>
-                             <div class="col-xl-6">
-                                <div class="form-group">
-                                    <label class="form-check-label" for="exampleCheck1">Select User group</label>
-                                    <textarea class="form-control" placeholder="Select User group" id="floatingTextarea"></textarea>
-                                </div>
-                              
-                             </div>
-                             <div class="col-xl-6">
-                                <div class="">
-                                   <div class="row">
-                                        <div class="col-lg-6 ">
-                                
-                                            <!-- Upload image input-->
-                                            <div class="input-group">
-                                                <div class="input-group-append my-2 px-4 pt-2 btn-light rounded-pill">
-                                                    <label for="upload" class=" px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
-                                                </div>
-                                                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
-                                                <label id="upload-label" for="upload" class="my-2 mx-2 font-weight-light text-muted">Choose file</label>
-                                                
-                                            </div>
-                                
-                                        </div>
-                                        <div class="col-lg-6">
-                                             <!-- Uploaded image area-->
-                                         <div class="image-area "><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm  d-block"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!--image upload-->
-                             </div>
-                             <div class="col-xl-6">
-                                <div class="d-flex  justify-content-end">
-                                    <button class="btn-save">Save</button>
-                                    <button class="btn-discard">Reset</button>
-                                </div>
-                             </div>
-                           </div>
-                    </div>
-                  </div>
+                <div class="col-xl-8 d-flex  justify-content-end align-items-end">
+                    <button class="btn-save">Import & Save</button>
+                    <button class="btn-discard">Export in excel</button>
+                </div>
             </div>
+           <div class="row p-2">
+            <div class="col-xl-2 col-sm-12 form-group">
+                <label for="form-control">Project code</label>
+                <input type="text" class="form-control" placeholder="Project code">
+            </div>
+            <div class="col-xl-4 col-sm-12 form-group">
+                <label for="form-control">Project Name</label>
+                <input type="text" class="form-control" placeholder="Project Name">
+            </div>
+
+           </div>
           </article>
            
           <article class='c4 nv nav4 '>
